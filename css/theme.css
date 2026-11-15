@@ -174,12 +174,12 @@ html, body { background: var(--espresso); }
    7. Tip 1 example: the chat is the visual
    ============================================================ */
 .example .left { position: absolute; left: 128px; top: 112px; bottom: 112px; width: 480px; display: flex; flex-direction: column; gap: 28px; }
-.example .l { font-size: 76px; line-height: 1.02; letter-spacing: -0.02em; }
-.ex-steps { list-style: none; margin: auto 0 0; padding: 0; display: flex; flex-direction: column; gap: 36px; }
+.example .l { font-size: 68px; line-height: 1.02; letter-spacing: -0.02em; }
+.ex-steps { list-style: none; margin: auto 0 0; padding: 0; display: flex; flex-direction: column; gap: 26px; }
 .ex-steps li { display: grid; grid-template-columns: 64px 1fr; gap: 20px; align-items: start; }
 .ex-steps .n { width: 64px; height: 64px; border-radius: 50%; background: var(--tomato); color: var(--cream); display: grid; place-items: center; font: 700 34px/1 var(--font-display); }
-.ex-steps h3 { margin: 6px 0 8px; font: 700 40px/1.05 var(--font-display); letter-spacing: -0.02em; color: var(--espresso); }
-.ex-steps p { margin: 0; font: 400 28px/1.35 var(--font-body); color: var(--muted); }
+.ex-steps h3 { margin: 6px 0 6px; font: 700 36px/1.05 var(--font-display); letter-spacing: -0.02em; color: var(--espresso); }
+.ex-steps p { margin: 0; font: 400 26px/1.3 var(--font-body); color: var(--muted); }
 /* Steps sit dimmed, then light up on their click */
 .reveal .slides section .fragment.lit { opacity: .3; visibility: inherit; transition: opacity var(--dur) var(--ease); }
 .reveal .slides section .fragment.lit.visible { opacity: 1; }
@@ -265,6 +265,159 @@ html, body { background: var(--espresso); }
 @media (prefers-reduced-motion: reduce) { .flag, .flag::after { transition: none; } }
 
 /* ============================================================
+   Tip 2 shortcuts: /redteam leads
+   ============================================================ */
+.shortcuts .pad { gap: 40px; }
+.shortcuts .xl { font-size: 120px; }
+.sc-grid { display: grid; grid-template-columns: 1.25fr 1fr; grid-template-rows: 1fr 1fr; gap: 28px; flex: 1; min-height: 0; }
+.sc { background: var(--sand); border-radius: 32px; padding: 30px 40px; display: flex; flex-direction: column; justify-content: center; gap: 10px; }
+.sc .code { margin: 0; font: 700 56px/1 ui-monospace, "SF Mono", Menlo, Consolas, monospace; letter-spacing: -0.02em; color: var(--tomato); }
+.sc .desc { margin: 0; font: 400 30px/1.35 var(--font-body); color: var(--muted); text-wrap: pretty; }
+.sc-main { grid-row: 1 / 3; background: var(--espresso); padding: 48px 56px; gap: 24px; }
+.sc-main .code { font-size: 104px; color: var(--mustard); }
+.sc-main .desc { font-size: 40px; line-height: 1.35; color: var(--cream); }
+.sc-note { margin: 0; font: 500 28px/1.3 var(--font-body); color: var(--muted); }
+.sc-note::before { content: "Note: "; font-weight: 700; color: var(--tomato); }
+
+/* ============================================================
+   Shared bits for Tips 3 to 5
+   ============================================================ */
+.node { display: inline-flex; align-items: center; padding: 14px 24px; border-radius: 18px; background: var(--sand); font: 600 28px/1.15 var(--font-display); letter-spacing: -0.01em; color: var(--espresso); }
+.node.decision { background: var(--tomato); color: var(--cream); border-radius: 999px; }
+.node.missing { background: var(--cream); color: var(--tomato); border: 3px dashed var(--tomato); }
+.arr { font: 700 30px/1 var(--font-body); color: var(--tomato); }
+.flow { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 12px; }
+.band { margin: 0; padding: 26px 40px; border-radius: 28px; background: var(--espresso); color: var(--cream); font: 500 38px/1.25 var(--font-display); letter-spacing: -0.015em; }
+.band b { color: var(--mustard); }
+.credit { margin: 0; font: 400 24px/1.3 var(--font-body); color: var(--muted); font-style: italic; }
+
+/* ---------- Tip 3 intro: the zipper test ---------- */
+.zip-intro .tip-head { margin: 56px 0 auto; }
+.zip-intro svg.zipper { position: absolute; left: 1470px; top: 96px; width: 360px; height: 648px; }
+.zip-qs { position: absolute; left: 128px; right: 128px; bottom: 96px; margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.zip-qs li { display: grid; grid-template-columns: 52px 1fr; gap: 16px; align-items: start; background: var(--espresso-2); border-radius: 24px; padding: 22px 26px; font: 500 30px/1.3 var(--font-body); color: var(--cream); }
+.zip-qs li span { width: 52px; height: 52px; border-radius: 50%; background: var(--mustard); color: var(--espresso); display: grid; place-items: center; font: 700 28px/1 var(--font-display); }
+
+/* ---------- Tip 3 toast test ---------- */
+.toast .pad { gap: 28px; }
+.toast-rows { display: flex; flex-direction: column; gap: 22px; }
+.trow { display: grid; grid-template-columns: 200px 1fr; gap: 24px; align-items: start; }
+.trow .who { margin: 12px 0 0; font: 700 30px/1.15 var(--font-display); color: var(--espresso); }
+.trow .who b { display: block; font: 600 22px/1.4 var(--font-body); letter-spacing: .12em; text-transform: uppercase; color: var(--tomato); }
+.toast .band { margin-top: auto; }
+
+/* ---------- Tip 3 example: missing steps ---------- */
+.mapit .pad { gap: 30px; }
+.map-label { margin: 0; font: 600 30px/1.2 var(--font-body); color: var(--muted); }
+.big-flow { gap: 18px 14px; }
+.big-flow .node { font-size: 32px; padding: 18px 28px; }
+.gap-step { display: inline-flex; align-items: center; gap: 12px; }
+.mapit .msg.ask { max-width: 1200px; align-self: flex-start; }
+.mapit .band { margin-top: auto; }
+
+/* ---------- Tip 4 intro: the chef ---------- */
+.chef-intro .tip-head .big { font-size: 160px; }
+.chef-intro svg.chef-robot { position: absolute; left: 1580px; top: 500px; width: 300px; height: 450px; }
+.tickets { position: absolute; left: 1070px; top: 330px; width: 440px; height: 420px; }
+.ticket { position: absolute; left: 0; width: 400px; margin: 0; padding: 22px 26px 26px; background: #FFFDF8; color: var(--espresso); border-radius: 8px; font: 500 28px/1.3 var(--font-display); box-shadow: 0 8px 0 rgba(0,0,0,.25); }
+.ticket b { display: block; font: 700 20px/1 var(--font-body); letter-spacing: .14em; color: var(--tomato); margin-bottom: 8px; }
+.ticket.t1 { top: 0; transform: rotate(-3deg); }
+.ticket.t2 { top: 128px; left: 30px; transform: rotate(2deg); }
+.ticket.t3 { top: 256px; left: 6px; transform: rotate(-1.5deg); }
+.recipe-card { position: absolute; left: 1060px; top: 350px; width: 460px; margin: 0; padding: 30px 36px 34px; background: #FFFDF8; color: var(--espresso); border-radius: 14px; border-top: 14px solid var(--tomato); box-shadow: 0 14px 0 rgba(0,0,0,.3); }
+.recipe-card .rc-title { margin: 0 0 16px; font: 700 40px/1.1 var(--font-display); letter-spacing: -0.02em; }
+.recipe-card ul { margin: 0; padding-left: 30px; display: flex; flex-direction: column; gap: 8px; font: 500 30px/1.3 var(--font-body); }
+.recipe-card li::marker { color: var(--tomato); }
+
+/* ---------- Tip 4 restaurant ---------- */
+.restaurant .pad { gap: 32px; }
+.roles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+.role { background: var(--sand); border-radius: 30px; padding: 30px 30px 34px; display: flex; flex-direction: column; gap: 8px; }
+.role svg { width: 104px; height: 104px; margin-bottom: 6px; }
+.role .r-who { margin: 0; font: 700 22px/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--tomato); }
+.role h3 { margin: 0; font: 700 46px/1.05 var(--font-display); letter-spacing: -0.025em; }
+.role p { margin: 0; font: 400 28px/1.35 var(--font-body); color: var(--muted); }
+.restaurant .band { margin-top: auto; }
+
+/* ---------- Tip 4 example: the recipe card ---------- */
+.recipe-demo .pad { gap: 34px; }
+.rd { display: grid; grid-template-columns: 1fr 780px; gap: 48px; align-items: start; }
+.rd-chat { display: flex; flex-direction: column; gap: 22px; }
+.rd-chat .msg { max-width: none; font-size: 31px; }
+.rd-chat .msg.you { margin-left: 60px; }
+.rd-chat .msg.ai { margin-right: 60px; max-width: none; }
+.callback { margin: 8px 0 0; font: 600 32px/1.3 var(--font-display); color: var(--espresso); }
+.callback code { font: 700 32px ui-monospace, "SF Mono", Menlo, monospace; color: var(--tomato); }
+.index-card { background: #FFFDF8; border: 3px solid var(--line); border-top: 14px solid var(--tomato); border-radius: 16px; padding: 30px 40px 36px; box-shadow: 0 14px 0 rgba(43,36,32,.08); transform: rotate(1deg); }
+.ic-title { margin: 0 0 18px; padding-bottom: 14px; border-bottom: 3px solid var(--sand); font: 700 44px/1.1 var(--font-display); letter-spacing: -0.02em; }
+.ic-body { display: flex; flex-direction: column; gap: 18px; }
+.ic-body p { margin: 0; font: 400 29px/1.35 var(--font-body); color: var(--muted); }
+.ic-body b { display: block; font: 700 22px/1.3 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--teal); }
+
+/* ---------- Tip 5 intro: the box ---------- */
+.box-intro .tip-head .big { font-size: 150px; }
+.box-intro svg.box-scene { position: absolute; left: 1290px; top: 250px; width: 480px; height: 600px; overflow: visible; }
+.pop-tag { position: absolute; margin: 0; padding: 14px 26px; border-radius: 999px; background: var(--mustard); color: var(--espresso); font: 700 30px/1 var(--font-display); white-space: nowrap; box-shadow: 0 8px 0 rgba(0,0,0,.25); }
+.pop-tag.p1 { left: 1190px; top: 230px; transform: rotate(-6deg); }
+.pop-tag.p2 { left: 1560px; top: 300px; transform: rotate(5deg); }
+.pop-tag.p3 { left: 1500px; top: 900px; transform: rotate(-3deg); }
+.reveal .slides section .pop-tag.fragment.pop.visible.p1 { transform: rotate(-6deg); }
+.reveal .slides section .pop-tag.fragment.pop.visible.p2 { transform: rotate(5deg); }
+.reveal .slides section .pop-tag.fragment.pop.visible.p3 { transform: rotate(-3deg); }
+
+/* ---------- Tip 5 surprises ---------- */
+.surprises .pad { gap: 36px; }
+.idea-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; flex: 1; min-height: 0; }
+.idea { background: var(--sand); border-radius: 30px; padding: 34px 36px; display: flex; flex-direction: column; justify-content: center; gap: 12px; }
+.idea h3 { margin: 0; font: 700 44px/1.05 var(--font-display); letter-spacing: -0.025em; color: var(--tomato); text-wrap: balance; }
+.idea p { margin: 0; font: 400 30px/1.35 var(--font-body); color: var(--muted); }
+
+/* ---------- Tip 5 example: reviews ---------- */
+.reviews .pad { gap: 30px; }
+.reviews .l { color: var(--cream); }
+.rv { display: grid; grid-template-columns: 1fr 760px; gap: 48px; align-items: start; }
+.rv-left { display: flex; flex-direction: column; gap: 18px; }
+.rv-label { margin: 0; font: 700 22px/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--mustard); }
+.review { margin: 0; padding: 20px 28px; background: var(--espresso-2); border-radius: 22px; font: 500 30px/1.4 var(--font-display); color: var(--cream); }
+.review mark { background: none; color: inherit; text-decoration: underline 4px transparent; text-underline-offset: 7px; transition: text-decoration-color 400ms var(--ease) 400ms, color 400ms var(--ease) 400ms; }
+.reviews:has(.rv-right.visible) .review mark { text-decoration-color: var(--mustard); color: var(--mustard); }
+.rv-left .msg.you { margin-top: 8px; max-width: none; font-size: 30px; }
+.rv-right { background: var(--cream); color: var(--espresso); border-radius: 32px; padding: 34px 40px 38px; display: flex; flex-direction: column; gap: 22px; }
+.rv-right .who { margin: 0; font: 700 22px/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--tomato); }
+.rv-right .better { border-top-color: var(--line); color: var(--espresso); font-size: 32px; }
+.rv-right .better b { color: var(--tomato); }
+@media (prefers-reduced-motion: reduce) { .review mark { transition: none; } }
+
+/* ---------- Tip 4 staircase ---------- */
+.ladder .pad { gap: 32px; }
+.ladder .l { color: var(--cream); }
+.steps-up { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; flex: 1; min-height: 0; align-items: end; }
+.step { border-radius: 30px 30px 0 0; padding: 36px 40px; display: flex; flex-direction: column; justify-content: flex-end; gap: 10px; box-sizing: border-box; }
+.step .s-tag { margin: 0; font: 700 22px/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; }
+.step h3 { margin: 0; font: 700 50px/1.05 var(--font-display); letter-spacing: -0.025em; }
+.step p:last-child { margin: 0; font: 400 30px/1.35 var(--font-body); }
+.step.s1 { height: 300px; background: var(--espresso-2); color: var(--cream); }
+.step.s1 .s-tag { color: var(--mustard); }
+.step.s2 { height: 440px; background: var(--mustard); color: var(--espresso); }
+.step.s2 .s-tag { color: var(--espresso); }
+.step.s3 { height: 580px; background: var(--tomato); color: var(--cream); }
+.step.s3 .s-tag { color: #FDE5D8; }
+.reveal .slides section .fragment.rise { opacity: 0; visibility: hidden; transform: translateY(60px); transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease), visibility 0s linear var(--dur); }
+.reveal .slides section .fragment.rise.visible { opacity: 1; visibility: inherit; transform: none; transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease), visibility 0s; }
+@media (prefers-reduced-motion: reduce) { .reveal .slides section .fragment.rise { transition: none; transform: none; } }
+
+/* ---------- Tip 2 shortcuts: definition line ---------- */
+.shortcuts .xl { font-size: 104px; }
+.sc-lede { margin: -12px 0 0; font: 400 32px/1.35 var(--font-body); color: var(--muted); max-width: 1500px; }
+
+/* ---------- Tip 2 Your Turn: one clear action ---------- */
+.one-action .oa { margin: auto 0; display: flex; flex-direction: column; gap: 40px; }
+.oa-head { margin: 0; font: 700 190px/.95 var(--font-display); letter-spacing: -0.04em; color: var(--espresso); }
+.oa-head code { font: 700 176px/1 ui-monospace, "SF Mono", Menlo, Consolas, monospace; letter-spacing: -0.04em; color: var(--tomato); }
+.oa-text { margin: 0; font: 500 52px/1.3 var(--font-display); letter-spacing: -0.015em; color: var(--espresso); max-width: 1500px; text-wrap: balance; }
+.oa-note { margin: 0; font: 400 30px/1.35 var(--font-body); color: var(--muted); }
+
+/* ============================================================
    Reveal motion. Fragments start hidden; each click adds .visible.
    ============================================================ */
 .reveal .slides section .fragment.pop { opacity: 0; visibility: hidden; transform: translateY(16px) scale(.97); transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease), visibility 0s linear var(--dur); }
@@ -301,3 +454,151 @@ g.draw.visible .app:nth-of-type(4) { transition-delay: 660ms; }
   .comm .robot { transition: none; }
   .reveal .slides section.present .toon-cameo { animation: none; }
 }
+
+/* Tip 1 example: a little tighter so all three messages fit above the input bar */
+.example .chat { gap: 16px; padding: 22px 32px; }
+.example .msg { font-size: 29px; line-height: 1.38; padding: 20px 28px; }
+
+/* ============================================================
+   One-action Your Turn variants (Tips 1 and 3)
+   ============================================================ */
+.oa-head.long { font-size: 132px; line-height: 1; letter-spacing: -0.035em; max-width: 1300px; text-wrap: balance; }
+.invite .oa, .map-invite .oa { max-width: 1250px; }
+.invite-robot { position: absolute; left: 1520px; top: 560px; width: 300px; height: 410px; }
+.invite-bubble { position: absolute; left: 1430px; top: 380px; margin: 0; padding: 24px 32px; border-radius: 40px; background: var(--mustard); color: var(--espresso); font: 600 40px/1.1 var(--font-display); }
+.invite-bubble::after { content: ""; position: absolute; right: 120px; bottom: -28px; border-style: solid; border-width: 30px 0 0 34px; border-color: var(--mustard) transparent transparent transparent; }
+
+/* ============================================================
+   Tip 3: intro term card
+   ============================================================ */
+.zip-intro .tip-head { margin: auto 0; gap: 34px; width: 1180px; }
+.zip-intro .tip-head .big { font-size: 160px; }
+.ioed { border-left: 8px solid var(--mustard); padding: 6px 0 6px 32px; }
+.ioed-term { margin: 0 0 10px; font: 700 52px/1.1 var(--font-display); letter-spacing: -0.02em; color: var(--cream); }
+.ioed-def { margin: 0; font: 400 38px/1.35 var(--font-body); color: var(--muted-dark); }
+.zip-intro .support { font-size: 40px; color: var(--mustard); font-weight: 600; }
+.zip-intro svg.zipper { top: 200px; }
+
+/* ============================================================
+   Tip 3: sticky notes
+   ============================================================ */
+.stickies .pad { gap: 40px; }
+.stickies .l { font-size: 96px; }
+.wall { list-style: none; margin: auto 0; padding: 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 28px; align-items: start; }
+.note { display: flex; align-items: center; justify-content: center; text-align: center; aspect-ratio: 1; box-sizing: border-box; padding: 26px; font: 600 46px/1.05 "Caveat", "Bradley Hand", cursive; color: var(--espresso); box-shadow: 0 12px 0 rgba(43,36,32,.10), 0 2px 0 rgba(43,36,32,.08); }
+.note.pink { background: #F7B9C6; }
+.note.yellow { background: #F8D96A; }
+.wall .r1 { transform: rotate(-3deg); } .wall .r2 { transform: rotate(2deg); margin-top: 26px; }
+.wall .r3 { transform: rotate(-1.5deg); } .wall .r4 { transform: rotate(3deg); margin-top: 20px; }
+.wall .r5 { transform: rotate(-2.5deg); } .wall .r6 { transform: rotate(1.5deg); margin-top: 24px; }
+.reveal .slides section .wall .note.fragment.pop.r1.visible { transform: rotate(-3deg); }
+.reveal .slides section .wall .note.fragment.pop.r2.visible { transform: rotate(2deg); }
+.reveal .slides section .wall .note.fragment.pop.r4.visible { transform: rotate(3deg); }
+
+.mini-wall { position: absolute; right: 120px; top: 400px; width: 420px; height: 480px; }
+.mini-wall .note { position: absolute; width: 230px; font-size: 44px; }
+.mini-wall .m1 { left: 0; top: 0; transform: rotate(-5deg); }
+.mini-wall .m2 { left: 190px; top: 160px; transform: rotate(4deg); }
+.mini-wall .m3 { left: 20px; top: 300px; transform: rotate(-2deg); }
+
+/* ============================================================
+   Your Turn! handwritten kicker
+   ============================================================ */
+.yt-hand { margin: 0 0 -6px -4px; font: 600 150px/0.9 "Caveat", "Bradley Hand", cursive; color: var(--tomato); transform: rotate(-3deg); transform-origin: left center; }
+.one-action .oa { gap: 30px; }
+
+/* ============================================================
+   Tip 3 slide 1: the mess becomes a path
+   ============================================================ */
+.mess-intro .tip-head { margin: auto 0; gap: 34px; width: 1100px; }
+.mess-intro .tip-head .big { font-size: 170px; }
+.mess-intro .support { font-size: 44px; text-wrap: balance; }
+.mess-intro svg.mess { position: absolute; left: 1220px; top: 240px; width: 600px; height: 600px; }
+.mess .tangle { transition: opacity 500ms var(--ease); }
+.mess-intro:has(.straight.visible) .tangle { opacity: 0; }
+
+/* ============================================================
+   Tip 3 slide 2: explain it to a friend
+   ============================================================ */
+.friend .pad { gap: 16px; }
+.friend .l { font-size: 92px; }
+.friend-sub { margin: 0; font: 400 38px/1.3 var(--font-body); color: var(--muted); }
+.friend-ginger { position: absolute; left: 150px; top: 430px; height: 620px; width: auto; margin: 0; max-width: none; max-height: none; }
+.friend-robot { position: absolute; left: 1560px; top: 620px; width: 290px; height: 397px; }
+.fb { position: absolute; margin: 0; box-sizing: border-box; padding: 24px 32px; border-radius: 40px; font: 600 38px/1.2 var(--font-display); letter-spacing: -0.01em; text-wrap: balance; }
+.fb::after { content: ""; position: absolute; bottom: -28px; border-style: solid; }
+.fb1 { left: 560px; top: 430px; width: 560px; background: #FFFDF8; border: 4px solid var(--espresso); }
+.fb1::after { left: 50px; bottom: -30px; border-width: 30px 34px 0 0; border-color: var(--espresso) transparent transparent transparent; }
+.fb2 { left: 1180px; top: 450px; width: 470px; background: var(--mustard); color: var(--espresso); }
+.fb2::after { right: 60px; border-width: 30px 0 0 34px; border-color: var(--mustard) transparent transparent transparent; }
+.fb3 { left: 600px; top: 650px; width: 420px; background: var(--teal); color: var(--cream); }
+.fb3::after { left: 40px; border-width: 30px 34px 0 0; border-color: var(--teal) transparent transparent transparent; }
+.ioed-card { position: absolute; left: 640px; top: 820px; width: 880px; box-sizing: border-box; padding: 28px 36px; border-radius: 28px; background: var(--espresso); color: var(--cream); }
+.ioed-card .ioed-term { margin: 0 0 8px; font: 700 44px/1.1 var(--font-display); letter-spacing: -0.02em; color: var(--mustard); }
+.ioed-card .ioed-def { margin: 0; font: 400 32px/1.35 var(--font-body); color: var(--cream); }
+
+/* ---------- Title slide subtitle ---------- */
+.title-slide .title-stack { display: flex; flex-direction: column; gap: 44px; }
+.title-sub { margin: 0; font: 600 54px/1.15 var(--font-display); letter-spacing: -0.015em; color: var(--cream); }
+
+/* ---------- Tip 1 example: shorter, larger ---------- */
+.ex-steps.short { gap: 34px; }
+.ex-steps.short li { align-items: center; }
+.ex-steps.short h3 { margin: 0; font-size: 46px; }
+.example .msg { font-size: 36px; line-height: 1.38; padding: 24px 32px; }
+.example .chat { gap: 22px; padding: 30px 36px; }
+.example .l { font-size: 76px; }
+
+/* ---------- Tip 2: /redteam on its own ---------- */
+.shortcuts.solo .pad { gap: 44px; }
+.sc-solo { flex: none; padding: 56px 64px; gap: 22px; }
+.sc-solo .code { font-size: 132px; }
+.sc-solo .desc { font-size: 48px; }
+.shortcuts.solo .sc-lede { margin: 0; font-size: 34px; }
+.shortcuts.solo .sc-lede b { color: var(--tomato); }
+
+/* ---------- Four-tip refinements ---------- */
+.yt-hand { font-size: 132px; }
+.oa-note b { color: var(--tomato); font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+.push .oa-text { font-style: italic; }
+
+/* Larger text on example slides */
+.cx .msg { font-size: 34px; line-height: 1.4; }
+.risks li { font-size: 32px; }
+.better { font-size: 32px; }
+.note { font-size: 56px; padding: 22px; }
+
+/* ---------- Resources ---------- */
+.resources .pad { gap: 34px; }
+.yt-hand.on-dark { color: var(--mustard); margin-bottom: -10px; }
+.resources .xl { font-size: 120px; color: var(--cream); }
+.res-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+.res { background: var(--espresso-2); border-radius: 28px; padding: 32px 32px 36px; display: flex; flex-direction: column; gap: 10px; }
+.res .res-kind { margin: 0; font: 700 22px/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--mustard); }
+.res h3 { margin: 0; font: 700 44px/1.05 var(--font-display); letter-spacing: -0.02em; color: var(--cream); }
+.res p:last-child { margin: 0; font: 400 28px/1.35 var(--font-body); color: var(--muted-dark); }
+.res.more { background: transparent; border: 3px dashed #6B5E54; }
+.res-close { margin: auto 0 0; font: 600 44px/1.2 var(--font-display); letter-spacing: -0.015em; color: var(--cream); }
+.res-close span { display: block; color: var(--mustard); }
+/* Tip 4 ideas: four cards, two by two, larger text */
+.idea-grid { grid-template-columns: repeat(2, 1fr); }
+.idea h3 { font-size: 54px; }
+.idea p { font-size: 34px; }
+
+/* ---------- Tip 2: AI likes to agree with you ---------- */
+.agree .pad { gap: 40px; }
+.agree-body { margin: auto 0; display: flex; flex-direction: column; gap: 52px; }
+.agree-setup { margin: 0; font: 600 64px/1.15 var(--font-display); letter-spacing: -0.02em; color: var(--muted); }
+.agree-punch { margin: 0; font: 700 112px/1.02 var(--font-display); letter-spacing: -0.04em; color: var(--espresso); max-width: 1660px; text-wrap: balance; }
+.count { display: inline-block; min-width: 2.7ch; padding: 0 14px; border-radius: 14px; background: var(--mustard); color: var(--espresso); text-align: center; font-variant-numeric: tabular-nums; }
+.agree-cite { margin: 0; font: 400 26px/1.35 var(--font-body); color: var(--muted); }
+
+/* ---------- Tip 2 /redteam slide: Ginger on the right ---------- */
+.shortcuts.solo .xl, .shortcuts.solo .sc-solo, .shortcuts.solo .sc-lede { max-width: 1240px; }
+.shortcuts.solo .xl { font-size: 116px; }
+.shortcuts.solo .sc-solo .code { font-size: 120px; }
+.shortcuts.solo .sc-solo .desc { font-size: 44px; }
+.sc-ginger { position: absolute; left: 1470px; top: 400px; height: 620px; width: auto; margin: 0; max-width: none; max-height: none; }
+.sc-bubble { position: absolute; left: 1430px; top: 200px; width: 400px; box-sizing: border-box; margin: 0; padding: 26px 32px; border-radius: 40px; background: var(--mustard); color: var(--espresso); font: 700 44px/1.1 var(--font-display); letter-spacing: -0.015em; text-align: center; }
+.sc-bubble::after { content: ""; position: absolute; left: 230px; bottom: -30px; border-style: solid; border-width: 32px 36px 0 0; border-color: var(--mustard) transparent transparent transparent; }
+.sc-ginger { transform: scaleX(-1); }
