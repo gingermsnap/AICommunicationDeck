@@ -71,7 +71,7 @@ Quick intro. Who I am, where I've worked, and why I'm standing up here talking a
     <!-- OPENING STATE: big headline + robot. Fades out on click 1. -->
     <h2 class="comm-headline fragment fade-out" data-fragment-index="1"><span><span class="handwrite">Today we're going to talk about…</span>AI is not just about coding and technology.<br><span class="hot">It's about communication.</span></span></h2>
 
-    <svg class="scene" viewBox="0 0 1920 1080" role="img" aria-label="A friendly AI robot. Four relationships appear one at a time: Ginger giving AI instructions, AI answering back, the parts inside AI tools, and AI connecting to other apps.">
+    <svg class="scene" viewBox="0 0 1920 1080" role="img" aria-label="A friendly AI robot. Four relationships appear one at a time: you start a conversation, AI responds and you question it, you teach AI your process, and you and AI think together.">
 
       <!-- The robot. Starts large on the right, moves to the center on click 1. -->
       <g class="robot" aria-hidden="true">
@@ -111,60 +111,39 @@ Quick intro. Who I am, where I've worked, and why I'm standing up here talking a
         <path d="M1700 318 L1730 290 M1712 362 L1750 356 M1702 404 L1734 424" stroke="#F2B544" stroke-width="7" stroke-linecap="round"/>
       </g>
 
-      <!-- CLICK 3: arrow to the inside-AI card -->
+      <!-- CLICK 3: You -> AI (arrow points up into the robot) -->
       <g class="fragment draw" data-fragment-index="3" aria-hidden="true">
-        <path class="stroke" pathLength="1" d="M872 706 C 856 728, 846 740, 832 756" fill="none" stroke="#B8401F" stroke-width="7" stroke-linecap="round"/>
-        <polygon class="late" points="822,770 826,744 846,758" fill="#B8401F"/>
+        <path class="stroke" pathLength="1" d="M830 762 C 844 744, 854 730, 866 714" fill="none" stroke="#B8401F" stroke-width="7" stroke-linecap="round"/>
+        <polygon class="late" points="880,695 876,721 856,707" fill="#B8401F"/>
       </g>
 
-      <!-- CLICK 4: arrow to the apps card -->
+      <!-- CLICK 4: You <-> AI (two-way arrow) -->
       <g class="fragment draw" data-fragment-index="4" aria-hidden="true">
-        <path class="stroke" pathLength="1" d="M1048 706 C 1064 728, 1074 740, 1088 756" fill="none" stroke="#B8401F" stroke-width="7" stroke-linecap="round"/>
-        <polygon class="late" points="1098,770 1074,758 1094,744" fill="#B8401F"/>
+        <path class="stroke" pathLength="1" d="M1060 719 C 1066 728, 1072 737, 1078 745" fill="none" stroke="#B8401F" stroke-width="7" stroke-linecap="round"/>
+        <polygon class="late" points="1046,700 1070,712 1050,726" fill="#B8401F"/>
+        <polygon class="late" points="1092,764 1087,738 1068,752" fill="#B8401F"/>
       </g>
     </svg>
 
     <!-- CLICK 1: Ginger (illustrated) -->
     <img class="ginger-toon fragment pop f-late" data-fragment-index="1" src="img/ginger-character.png" alt="Illustrated Ginger, smiling and gesturing toward the robot">
 
-    <!-- The four relationship cards -->
+    <!-- The four relationship cards: a roadmap of the four tips -->
     <div class="rcard c1 fragment pop f-late" data-fragment-index="1">
       <span class="num" aria-hidden="true">1</span>
-      <div><h3>You → AI</h3><p>How you communicate to AI with instructions and context.</p></div>
+      <div><p class="rc-dir">You → AI</p><h3>Start a conversation</h3><p>Share your ideas, goals, and context.</p></div>
     </div>
     <div class="rcard c2 fragment pop" data-fragment-index="2">
       <span class="num" aria-hidden="true">2</span>
-      <div><h3>AI → You</h3><p>How AI responds, explains, and asks questions.</p></div>
+      <div><p class="rc-dir">AI → You</p><h3>Question the response</h3><p>AI responds, but you decide what to trust.</p></div>
     </div>
     <div class="rcard c3 fragment pop" data-fragment-index="3">
       <span class="num" aria-hidden="true">3</span>
-      <div>
-        <h3>Inside AI systems</h3>
-        <p>How parts of an AI tool communicate with each other.</p>
-        <div class="minis">
-          <div class="minirow">
-            <svg viewBox="-34 -34 68 68" aria-hidden="true"><path d="M0 -30 l6 8 9-3 1 9 9 1-3 9 8 6-8 6 3 9-9 1-1 9-9-3-6 8-6-8-9 3-1-9-9-1 3-9-8-6 8-6-3-9 9-1 1-9 9 3 Z" fill="#F2B544" stroke="#2B2420" stroke-width="3.5" stroke-linejoin="round"/><circle r="9" fill="#FBF4E8" stroke="#2B2420" stroke-width="3.5"/></svg>
-            <p><b>Most chats</b>One model</p>
-          </div>
-          <div class="minirow">
-            <svg viewBox="-34 -34 68 68" aria-hidden="true"><path d="M-20 16 L0 -18 L20 16 Z" fill="none" stroke="#2B2420" stroke-width="3.5" stroke-dasharray="5 4"/><circle cx="0" cy="-18" r="11" fill="#F2B544" stroke="#2B2420" stroke-width="3.5"/><circle cx="-20" cy="16" r="11" fill="#2A7C82" stroke="#2B2420" stroke-width="3.5"/><circle cx="20" cy="16" r="11" fill="#B8401F" stroke="#2B2420" stroke-width="3.5"/></svg>
-            <p><b>Some tools</b>Agents team up</p>
-          </div>
-        </div>
-      </div>
+      <div><p class="rc-dir">You → AI</p><h3>Teach AI your process</h3><p>Clear instructions for repeatable tasks.</p></div>
     </div>
     <div class="rcard c4 fragment pop" data-fragment-index="4">
       <span class="num" aria-hidden="true">4</span>
-      <div>
-        <h3>AI → Other apps</h3>
-        <p>How AI communicates with other apps.</p>
-        <div class="apps" role="list" aria-label="Calendar, documents, email, and team chat">
-          <svg role="listitem" viewBox="0 0 110 110" aria-label="Calendar"><rect x="3" y="3" width="104" height="104" rx="26" fill="#FFFDF8" stroke="#2B2420" stroke-width="5"/><rect x="27" y="30" width="56" height="54" rx="7" fill="none" stroke="#2B2420" stroke-width="4"/><rect x="27" y="30" width="56" height="14" rx="4" fill="#2A7C82"/><path d="M40 22 V36 M70 22 V36" stroke="#2B2420" stroke-width="4" stroke-linecap="round"/><circle cx="42" cy="58" r="4" fill="#2B2420"/><circle cx="55" cy="58" r="4" fill="#2B2420"/><circle cx="68" cy="58" r="4" fill="#2B2420"/><circle cx="42" cy="71" r="4" fill="#2B2420"/><circle cx="55" cy="71" r="4" fill="#2B2420"/></svg>
-          <svg role="listitem" viewBox="0 0 110 110" aria-label="Documents"><rect x="3" y="3" width="104" height="104" rx="26" fill="#FFFDF8" stroke="#2B2420" stroke-width="5"/><path d="M34 22 H66 L82 38 V88 H34 Z" fill="none" stroke="#2B2420" stroke-width="4" stroke-linejoin="round"/><path d="M43 50 H73 M43 62 H73 M43 74 H63" stroke="#2A7C82" stroke-width="4" stroke-linecap="round"/></svg>
-          <svg role="listitem" viewBox="0 0 110 110" aria-label="Email"><rect x="3" y="3" width="104" height="104" rx="26" fill="#FFFDF8" stroke="#2B2420" stroke-width="5"/><rect x="24" y="33" width="62" height="44" rx="6" fill="none" stroke="#2B2420" stroke-width="4"/><path d="M26 37 L55 59 L84 37" fill="none" stroke="#B8401F" stroke-width="4" stroke-linejoin="round"/></svg>
-          <svg role="listitem" viewBox="0 0 110 110" aria-label="Team chat"><rect x="3" y="3" width="104" height="104" rx="26" fill="#FFFDF8" stroke="#2B2420" stroke-width="5"/><path d="M28 30 H82 Q88 30 88 36 V66 Q88 72 82 72 H46 L32 86 V72 H28 Q22 72 22 66 V36 Q22 30 28 30 Z" fill="#F2B544" stroke="#2B2420" stroke-width="4" stroke-linejoin="round"/><circle cx="41" cy="51" r="4" fill="#2B2420"/><circle cx="55" cy="51" r="4" fill="#2B2420"/><circle cx="69" cy="51" r="4" fill="#2B2420"/></svg>
-        </div>
-      </div>
+      <div><p class="rc-dir">You ↔ AI</p><h3>Think together</h3><p>Explore ideas and discover new opportunities.</p></div>
     </div>
 
   </div>
@@ -174,21 +153,19 @@ Start with the headline on screen. Let it land.
 
 When people talk about AI, the conversation often turns to coding and technology. But I come at it from a different direction.
 
-I'm a communicator. And here's the thing: AI systems follow instructions. Knowing how to give, receive, and structure those instructions is a practical skill. Most of you already have it. You just haven't used it on AI yet.
+I'm a communicator. AI is the tool. Communication is the skill. And most of you already have that skill. You just haven't used it on AI yet.
 
-I see four communication relationships.
+This slide is our roadmap. Four tips, four ways we communicate with AI.
 
-[CLICK 1] You to AI. That's me, in cartoon form. This is the part you control: your prompt, your context, your goal, and your feedback.
+[CLICK 1] You to AI. Start a conversation. Share your ideas, your goals, and your context. That's Tip 1.
 
-[CLICK 2] AI to you. AI answers, explains, recommends, and sometimes asks you questions back. Like here: "Here's a draft. Want to adjust it?" That's an invitation to keep the conversation going.
+[CLICK 2] AI to you. AI responds. Like here: "Here's a draft. Want to adjust it?" But you decide what to trust. That's Tip 2: question the response.
 
-[CLICK 3] Inside AI systems. In most chats, one model works through your request. It isn't having a conversation with itself. But some newer tools split a big job into parts and hand those parts to separate agents that pass work back and forth. You don't need to know how that works to use it well.
+[CLICK 3] You to AI again, with more structure. Teach AI your process. Clear instructions for the tasks you repeat. That's Tip 3.
 
-[CLICK 4] AI to other apps. Connectors let AI work with your calendar, documents, email, and team chat. Only the ones you connect, and only with the access you allow.
+[CLICK 4] You and AI, both ways. Think together. Explore ideas and discover opportunities you hadn't considered. That's Tip 4.
 
-Transition: Keep these four in mind. Every tip today fits into one of them.
-
-Accuracy notes for Q&A: A model is the engine (like GPT, Claude, or Gemini). An agent is a setup where the model can take steps and use tools toward a goal. A connector is the link that gives AI permission to reach another app.
+Transition: Talk to AI, challenge AI, guide AI, think with AI. Let's start with talking.
   </aside>
 </section>
 <!-- ============================================================
@@ -574,11 +551,11 @@ Optional: once you like how this works, save it as a custom /redteam shortcut in
   <div class="pad">
     <div class="tip-badge">
       <span class="tip-num" aria-hidden="true">3</span>
-      <div><p class="tip-of">Tip 3 · How you explain your work</p><p class="tip-name">Fix the Workflow First</p></div>
+      <div><p class="tip-of">Tip 3 · How you guide AI</p><p class="tip-name">Teach AI Your Process</p></div>
     </div>
     <div class="tip-head">
-      <h2><span class="lead-in">Before you automate it,</span><span class="hot big">explain it.</span></h2>
-      <p class="support">If you can't clearly explain each step, you're not ready to automate it.</p>
+      <h2><span class="lead-in">The better you can communicate your process,</span><span class="hot big">the better you can teach AI to help you execute it.</span></h2>
+      <p class="support">Turn repeatable tasks into clear instructions AI can follow.</p>
     </div>
   </div>
   <svg class="mess" viewBox="0 0 600 600" role="img" aria-label="A tangled scribble that turns into a clean, straight arrow">
@@ -592,35 +569,103 @@ Optional: once you like how this works, save it as a custom /redteam shortcut in
     </g>
   </svg>
   <aside class="notes">
-THE TIP. This is tip 3 of 4. Tip 3 is how you explain your work.
+THE TIP. This is tip 3 of 4. Teach AI your process. Turn repeatable tasks into clear instructions AI can follow.
 
-Before you automate it, explain it. If you can't clearly explain each step, you're not ready to automate it.
+WHY IT MATTERS. The better you can communicate your process, the better you can teach AI to help you execute it.
 
-Important distinction (so this doesn't contradict Tip 1): You don't need everything figured out before you use AI. Bring the messy version. AI is great at helping you find missing steps, organize your thinking, and clarify a workflow.
+We often understand how to do something without realizing how much knowledge we're leaving out when we explain it. So before you teach AI a process, make sure you understand it yourself.
 
-But before you hand that workflow over to automation, you need to understand it, check it, and be able to explain it so another person could follow it. That part is your job.
+This isn't about becoming an automation expert. Your knowledge and your ability to communicate are what make AI useful.
 
-[CLICK] A little clarity turns the tangle into a clear path.
+How this is different from Tip 1: Tip 1 is how you start a conversation and share context. Tip 3 is how you explain a process clearly enough that AI can help you repeat it.
 
-Transition: So how do you know if you can really explain it?
+[CLICK] The tangle becomes a clear arrow. That's the goal: from "I just know how to do it" to steps someone else can follow.
+
+Transition: Let's test that with a sandwich.
   </aside>
 </section>
 
 <!-- ============================================================
-     TIP 3 · SLIDE 2: EXPLAIN IT TO A FRIEND
-     4 clicks: Ginger starts, AI asks, Ginger realizes, the name for it.
+     TIP 3 · SLIDE 2: YOU KNOW HOW TO MAKE A PB&J. BUT CAN YOU EXPLAIN IT?
+     1 click: the key message. Video plays only when you click the card.
      ============================================================ -->
-<section class="light friend" id="tip-3-friend" data-transition="fade">
+<section class="light pbj-slide" id="tip-3-pbj" data-transition="fade">
   <div class="pad">
     <div class="tip-badge sm">
       <span class="tip-num" aria-hidden="true">3</span>
-      <div><p class="tip-of">Tip 3 · The test</p><p class="tip-name">Fix the Workflow First</p></div>
+      <div><p class="tip-of">Tip 3 · The sandwich test</p><p class="tip-name">Teach AI Your Process</p></div>
     </div>
-    <h2 class="l">Can you explain it to a friend?</h2>
-    <p class="friend-sub">You need to be able to explain your process in simple language.</p>
+    <h2 class="l pbj-head">You know how to make a PB&amp;J. <span class="hot">But can you explain how to do it?</span></h2>
+    <div class="pbj-row">
+      <svg class="pbj" viewBox="0 0 640 520" role="img" aria-label="Two slices of bread, a jar of peanut butter, a jar of jelly, and a butter knife">
+      <ellipse cx="320" cy="470" rx="290" ry="26" fill="#E6D4B8"/>
+      <g transform="rotate(-6 150 330)">
+        <path d="M60 250 C 60 190, 100 170, 150 170 C 200 170, 240 190, 240 250 C 240 270, 228 280, 222 290 V 440 Q 222 452, 210 452 H 90 Q 78 452, 78 440 V 290 C 72 280, 60 270, 60 250 Z" fill="#E9B97A" stroke="#2B2420" stroke-width="7" stroke-linejoin="round"/>
+        <path d="M84 252 C 84 206, 112 192, 150 192 C 188 192, 216 206, 216 252 C 216 268, 204 276, 200 284 V 428 H 100 V 284 C 96 276, 84 268, 84 252 Z" fill="#FBEBD0"/>
+      </g>
+      <g transform="rotate(5 300 340)">
+        <path d="M210 260 C 210 200, 250 180, 300 180 C 350 180, 390 200, 390 260 C 390 280, 378 290, 372 300 V 450 Q 372 462, 360 462 H 240 Q 228 462, 228 450 V 300 C 222 290, 210 280, 210 260 Z" fill="#E9B97A" stroke="#2B2420" stroke-width="7" stroke-linejoin="round"/>
+        <path d="M234 262 C 234 216, 262 202, 300 202 C 338 202, 366 216, 366 262 C 366 278, 354 286, 350 294 V 438 H 250 V 294 C 246 286, 234 278, 234 262 Z" fill="#FBEBD0"/>
+      </g>
+      <g>
+        <rect x="402" y="236" width="128" height="214" rx="26" fill="#C98F55" stroke="#2B2420" stroke-width="7"/>
+        <rect x="394" y="204" width="144" height="46" rx="12" fill="#B8401F" stroke="#2B2420" stroke-width="7"/>
+        <rect x="418" y="296" width="96" height="74" rx="10" fill="#FBF4E8" stroke="#2B2420" stroke-width="5"/>
+        <text x="466" y="346" text-anchor="middle" font-family="Inter Tight, Inter, sans-serif" font-size="38" font-weight="700" fill="#2B2420">PB</text>
+      </g>
+      <g>
+        <rect x="532" y="290" width="96" height="160" rx="22" fill="#9C2F4A" stroke="#2B2420" stroke-width="7"/>
+        <rect x="526" y="264" width="108" height="38" rx="10" fill="#F2B544" stroke="#2B2420" stroke-width="7"/>
+        <rect x="546" y="336" width="68" height="54" rx="8" fill="#FBF4E8" stroke="#2B2420" stroke-width="5"/>
+        <text x="580" y="372" text-anchor="middle" font-family="Inter Tight, Inter, sans-serif" font-size="24" font-weight="700" fill="#2B2420">JAM</text>
+      </g>
+      <g transform="rotate(-28 360 150)">
+        <rect x="250" y="134" width="170" height="30" rx="15" fill="#FFFDF8" stroke="#2B2420" stroke-width="6"/>
+        <rect x="410" y="128" width="96" height="42" rx="12" fill="#2A7C82" stroke="#2B2420" stroke-width="6"/>
+      </g>
+    </svg>
+      <div class="video-slot">
+        <button class="video-card" type="button" data-video="cDA3_5982h8" data-start="43" aria-label="Play the Exact Instructions Challenge video">
+          <span class="play" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M17 12 L37 24 L17 36 Z" fill="#2B2420"/></svg></span>
+          <span class="vc-text"><b>Exact Instructions Challenge</b><span>Josh Darnit and his kids</span></span>
+        </button>
+      </div>
+    </div>
+    <p class="pbj-key fragment pop">What seems obvious to you isn't necessarily obvious to AI.</p>
   </div>
-  <img class="friend-ginger" src="img/ginger-character.png" alt="Illustrated Ginger, explaining something to the robot">
-  <svg class="friend-robot" viewBox="770 280 380 520" aria-hidden="true">
+  <aside class="notes">
+THE SANDWICH TEST. You know how to make a PB&J. But can you explain how to do it?
+
+When we're experts at something, we often forget how much we know. We skip steps because those steps have become automatic.
+
+VIDEO: "Exact Instructions Challenge" by Josh Darnit. His kids write instructions for making a PB&J, and he follows them word for word. Click the video card to play it right on the slide. It starts at 0:43 and needs an internet connection.
+Link: https://youtu.be/cDA3_5982h8?t=43
+Tip: after the video, click once on the slide background before using the arrow keys again.
+Backup if the video won't load: describe it. "Put peanut butter on the bread," and he puts the whole jar on top of the loaf.
+
+[CLICK] What seems obvious to you isn't necessarily obvious to AI.
+
+AI can infer some steps. But it can't know your preferences, your business rules, or your expectations unless you tell it.
+
+Transition: So how do you tell it? Think of it like a recipe.
+  </aside>
+</section>
+
+<!-- ============================================================
+     TIP 3 · SLIDE 3: THE CHEF AND THE RECIPE
+     5 clicks: chef, recipe, finished dish, refined recipe, then the band.
+     The chef is the deck's robot in a chef hat.
+     ============================================================ -->
+<section class="light chef-story" id="tip-3-chef" data-transition="fade">
+  <div class="pad">
+    <div class="tip-badge sm">
+      <span class="tip-num" aria-hidden="true">3</span>
+      <div><p class="tip-of">Tip 3 · Real example</p><p class="tip-name">Teach AI Your Process</p></div>
+    </div>
+    <h2 class="l">Imagine asking a chef to make your favorite meal.</h2>
+    <ol class="story" aria-label="The chef and the recipe">
+      <li class="st fragment pop">
+        <svg class="st-art" viewBox="770 200 380 600" aria-hidden="true">
       <rect x="858" y="604" width="204" height="176" rx="84" fill="#FFFDF8" stroke="#2B2420" stroke-width="6"/>
       <text x="960" y="726" text-anchor="middle" font-family="Inter Tight, Inter, sans-serif" font-size="60" font-weight="700" fill="#2B2420">AI</text>
       <rect x="796" y="462" width="34" height="88" rx="17" fill="#2A7C82" stroke="#2B2420" stroke-width="5"/>
@@ -630,65 +675,109 @@ Transition: So how do you know if you can really explain it?
       <path class="ai-eye" d="M892 502 Q914 474 936 502" fill="none" stroke="#FBF4E8" stroke-width="9" stroke-linecap="round"/>
       <path class="ai-eye" d="M984 502 Q1006 474 1028 502" fill="none" stroke="#FBF4E8" stroke-width="9" stroke-linecap="round"/>
       <path d="M942 532 Q960 548 978 532" fill="none" stroke="#FBF4E8" stroke-width="6" stroke-linecap="round"/>
-    </svg>
-  <p class="fb fb1 fragment pop">"Scheduling a meeting? Easy. You just find a time…"</p>
-  <p class="fb fb2 fragment pop">"A time for what? And who needs to be there?"</p>
-  <div class="ioed-card fragment pop">
-    <p class="ioed-term">That's the illusion of explanatory depth.</p>
-    <p class="ioed-def">We think we understand how something works until we try to explain every step.</p>
+      <rect x="880" y="318" width="160" height="62" rx="10" fill="#FFFDF8" stroke="#2B2420" stroke-width="5"/>
+      <circle cx="896" cy="296" r="40" fill="#FFFDF8" stroke="#2B2420" stroke-width="5"/>
+      <circle cx="1024" cy="296" r="40" fill="#FFFDF8" stroke="#2B2420" stroke-width="5"/>
+      <circle cx="960" cy="270" r="50" fill="#FFFDF8" stroke="#2B2420" stroke-width="5"/>
+      <rect x="884" y="300" width="152" height="40" fill="#FFFDF8"/>
+        </svg>
+        <p class="st-who">AI</p><h3>The chef</h3><p>Knows how to cook. Doesn't know how you like it.</p>
+      </li>
+      <li class="st fragment pop">
+        <svg class="st-art" viewBox="0 0 260 300" aria-hidden="true">
+        <rect x="22" y="16" width="216" height="268" rx="14" fill="#FFFDF8" stroke="#2B2420" stroke-width="6"/>
+        <path d="M22 30 Q22 16 36 16 H224 Q238 16 238 30 V60 H22 Z" fill="#B8401F" stroke="#2B2420" stroke-width="6" stroke-linejoin="round"/>
+        <text x="130" y="50" text-anchor="middle" font-family="Caveat, cursive" font-weight="600" font-size="34" fill="#FBF4E8">My recipe</text>
+        <g font-family="Caveat, cursive" font-weight="600" font-size="32" fill="#2B2420">
+          <rect x="44" y="86" width="22" height="22" rx="4" fill="#F2B544" stroke="#2B2420" stroke-width="4"/><text x="78" y="106">Steps</text>
+          <rect x="44" y="136" width="22" height="22" rx="4" fill="#F2B544" stroke="#2B2420" stroke-width="4"/><text x="78" y="156">Rules</text>
+          <rect x="44" y="186" width="22" height="22" rx="4" fill="#F2B544" stroke="#2B2420" stroke-width="4"/><text x="78" y="206">Preferences</text>
+          <rect x="44" y="236" width="22" height="22" rx="4" fill="#F2B544" stroke="#2B2420" stroke-width="4"/><text x="78" y="256">Looks like…</text>
+        </g>
+        </svg>
+        <p class="st-who">You provide</p><h3>The recipe</h3><p>Steps, rules, preferences, and the result you want.</p>
+      </li>
+      <li class="st fragment pop">
+        <svg class="st-art" viewBox="0 0 260 300" aria-hidden="true">
+        <text x="130" y="58" text-anchor="middle" font-family="Caveat, cursive" font-weight="600" font-size="36" fill="#B8401F" transform="rotate(-4 130 50)">Needs more garlic!</text>
+        <ellipse cx="130" cy="214" rx="118" ry="44" fill="#FFFDF8" stroke="#2B2420" stroke-width="6"/>
+        <ellipse cx="130" cy="208" rx="80" ry="26" fill="none" stroke="#E6D4B8" stroke-width="4"/>
+        <path d="M70 200 C 70 140, 190 140, 190 200 Z" fill="#F2B544" stroke="#2B2420" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M86 186 C 100 168, 112 196, 126 172 S 152 190, 170 176" fill="none" stroke="#C98F55" stroke-width="5" stroke-linecap="round"/>
+        <path d="M100 162 C 112 146, 150 146, 160 166 C 150 174, 112 176, 100 162 Z" fill="#B8401F" stroke="#2B2420" stroke-width="4"/>
+        <path d="M128 150 q 10 -16 24 -10 q -8 14 -24 10 z" fill="#2A7C82" stroke="#2B2420" stroke-width="3"/>
+        <path d="M96 118 q -10 -14 0 -26 M130 112 q -10 -14 0 -26 M164 118 q -10 -14 0 -26" fill="none" stroke="#C9B9A6" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <p class="st-who">You evaluate</p><h3>The finished dish</h3><p>Taste it. Give feedback.</p>
+      </li>
+      <li class="st fragment pop">
+        <svg class="st-art" viewBox="0 0 260 300" aria-hidden="true">
+        <rect x="22" y="16" width="216" height="268" rx="14" fill="#FFFDF8" stroke="#2B2420" stroke-width="6"/>
+        <path d="M22 30 Q22 16 36 16 H224 Q238 16 238 30 V60 H22 Z" fill="#B8401F" stroke="#2B2420" stroke-width="6" stroke-linejoin="round"/>
+        <text x="130" y="50" text-anchor="middle" font-family="Caveat, cursive" font-weight="600" font-size="34" fill="#FBF4E8">My recipe</text>
+        <g font-family="Caveat, cursive" font-weight="600" font-size="32" fill="#2B2420">
+          <rect x="44" y="86" width="22" height="22" rx="4" fill="#F2B544" stroke="#2B2420" stroke-width="4"/><text x="78" y="106">Steps</text>
+          <rect x="44" y="136" width="22" height="22" rx="4" fill="#F2B544" stroke="#2B2420" stroke-width="4"/><text x="78" y="156">Rules</text>
+          <rect x="44" y="186" width="22" height="22" rx="4" fill="#F2B544" stroke="#2B2420" stroke-width="4"/><text x="78" y="206">Preferences</text><text x="110" y="232" font-size="26" fill="#B8401F" transform="rotate(-4 160 225)">+ extra garlic!</text>
+          <rect x="44" y="236" width="22" height="22" rx="4" fill="#F2B544" stroke="#2B2420" stroke-width="4"/><text x="78" y="256">Looks like…</text>
+        </g>
+        <circle cx="226" cy="30" r="30" fill="#F2B544" stroke="#2B2420" stroke-width="5"/><text x="226" y="41" text-anchor="middle" font-family="Inter Tight, Inter, sans-serif" font-weight="700" font-size="28" fill="#2B2420">v2</text>
+        </svg>
+        <p class="st-who">You save</p><h3>The refined recipe</h3><p>Keep the better version to use again.</p>
+      </li>
+    </ol>
+    <p class="band fragment pop">A good recipe makes results <b>more consistent, not identical.</b> You're still the taste tester.</p>
   </div>
   <aside class="notes">
-THE TEST. Here's a simple way to check if you really understand a process: try explaining it to a friend, in simple language, one step at a time.
+THE CHEF AND THE RECIPE. About one minute.
 
-[CLICK 1] So I try it with something easy. "Scheduling a meeting? Easy. You just find a time…"
+Imagine asking a chef to make your favorite meal.
 
-[CLICK 2] And my friend asks the obvious question. "A time for what? And who needs to be there?"
+[CLICK 1] The chef is AI. A great chef knows how to cook. But a new chef doesn't know exactly how you like that meal made.
 
-That's the moment. I've scheduled hundreds of meetings, and I still skipped the first steps.
+[CLICK 2] The recipe is your instructions. You provide the steps, the rules, your preferences, and what the finished dish should look like.
 
-[CLICK 3] That has a name: the illusion of explanatory depth. We think we understand how something works until we try to explain every step. Researchers Leonid Rozenblit and Frank Keil at Yale described it in 2002. People rated how well they understood everyday things, then tried to explain them step by step, and their confidence dropped.
+[CLICK 3] The finished dish. You taste it and give feedback. "Needs more garlic."
 
-AI can help you find the gaps, if you ask it to. But you're the one who has to check them.
+[CLICK 4] The refined recipe. You update the recipe and save it, so next time it comes out closer to what you want.
 
-Transition: Let's see what was missing.
+[CLICK 5] A good recipe makes results more consistent, not identical. You're still the taste tester. Human review still matters.
   </aside>
 </section>
 
-
-<section class="light stickies" id="tip-3-example" data-transition="fade">
+<!-- ============================================================
+     TIP 3 · SLIDE 4: EXPLAIN, TEST, REFINE, REUSE
+     5 clicks: one step each, then the band.
+     ============================================================ -->
+<section class="light loop" id="tip-3-loop" data-transition="fade">
   <div class="pad">
     <div class="tip-badge sm">
       <span class="tip-num" aria-hidden="true">3</span>
-      <div><p class="tip-of">Tip 3 · Real example</p><p class="tip-name">Fix the Workflow First</p></div>
+      <div><p class="tip-of">Tip 3 · Make it repeatable</p><p class="tip-name">Teach AI Your Process</p></div>
     </div>
-    <h2 class="l">It's just scheduling a meeting. <span class="hot">Right?</span></h2>
-    <ol class="wall" aria-label="Steps for scheduling a meeting">
-      <li class="note yellow fragment pop r1">Define the purpose of the meeting.</li>
-      <li class="note yellow fragment pop r2">Decide who needs to attend.</li>
-      <li class="note pink r3">Find a time.</li>
-      <li class="note yellow fragment pop r4">Decide where to meet.</li>
-      <li class="note pink r5">Invite people.</li>
-      <li class="note pink r6">Hold the meeting.</li>
+    <h2 class="l">This is how a repeatable process begins.</h2>
+    <ol class="loop-row">
+      <li class="lp fragment pop"><span class="lp-ic"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M18 22h84a10 10 0 0 1 10 10v44a10 10 0 0 1-10 10H50l-22 18V86H18a10 10 0 0 1-10-10V32a10 10 0 0 1 10-10z" fill="#2A7C82" stroke="#2B2420" stroke-width="5" stroke-linejoin="round"/><path d="M28 44h64M28 62h44" stroke="#FBF4E8" stroke-width="6" stroke-linecap="round"/></svg></span><p class="lp-n">1</p><h3>Explain</h3><p>Describe how you do a task you repeat.</p></li>
+      <li class="lp fragment pop"><span class="lp-ic"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="46" fill="#F2B544" stroke="#2B2420" stroke-width="5"/><path d="M48 38 L84 60 L48 82 Z" fill="#2B2420"/></svg></span><p class="lp-n">2</p><h3>Test</h3><p>Have AI follow your instructions.</p></li>
+      <li class="lp fragment pop"><span class="lp-ic"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M26 94 L32 70 L80 22 L98 40 L50 88 Z" fill="#B8401F" stroke="#2B2420" stroke-width="5" stroke-linejoin="round"/><path d="M26 94 L32 70 L50 88 Z" fill="#FBF4E8" stroke="#2B2420" stroke-width="5" stroke-linejoin="round"/><path d="M72 30 L90 48" stroke="#2B2420" stroke-width="5"/></svg></span><p class="lp-n">3</p><h3>Refine</h3><p>Review the result. Clarify what's missing.</p></li>
+      <li class="lp fragment pop"><span class="lp-ic"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M30 14 H90 V106 L60 86 L30 106 Z" fill="#2A7C82" stroke="#2B2420" stroke-width="5" stroke-linejoin="round"/><path d="M60 34 l6 13 14 2 -10 10 2 14 -12 -7 -12 7 2 -14 -10 -10 14 -2 z" fill="#F2B544" stroke="#2B2420" stroke-width="3" stroke-linejoin="round"/></svg></span><p class="lp-n">4</p><h3>Reuse</h3><p>Save the instructions for next time.</p><p class="lp-skill">Some AI tools let you save these as a <b>skill</b>.</p></li>
     </ol>
+    <p class="band fragment pop">You don't have to be a programmer to teach AI how you work. <b>Explain what you do, how you do it, and what a good result looks like.</b></p>
   </div>
   <aside class="notes">
-REAL EXAMPLE. Let's try something everyone does: scheduling a meeting.
+MAKE IT REPEATABLE. The recipe is an analogy for a workflow. This is how a repeatable business process can begin.
 
-Most of us would describe it like the pink notes. Find a time. Invite people. Hold the meeting. Done.
+[CLICK 1] Explain. Describe how you complete a task you do over and over.
 
-[CLICK 1] But wait. Why are we meeting? Define the purpose of the meeting.
+[CLICK 2] Test. Have AI follow your instructions.
 
-[CLICK 2] Who actually needs to be there? Decide who needs to attend.
+[CLICK 3] Refine. Review the result and clarify anything that's missing. Then test again.
 
-[CLICK 3] And where? In person, on Zoom, a conference room? Decide where to meet.
+[CLICK 4] Reuse. Save the instructions for next time. Some AI tools let you package reusable instructions as a "skill." Same idea: a recipe AI can follow when you need it.
 
-Three steps became six. And these are the steps that, when they're skipped, cause the most frustration. If you asked AI to schedule your meetings using only the pink notes, you'd get a lot of pointless meetings with the wrong people.
+[CLICK 5] You don't have to be a programmer to teach AI how you work. You need to explain what you do, how you do it, and what a good result looks like.
 
-Key takeaway: Before handing a process to AI, make sure you understand how it actually works.
-
-AI can help spot gaps like these. But you're responsible for checking the process before you automate it.
-
-Optional reference if anyone asks: Tom Wujec's TED Talk, "Got a wicked problem? First, tell me how you make toast," uses sticky notes the same way to make a process visible.
+Keep it here. This is about communicating a process, not building software.
   </aside>
 </section>
 
@@ -696,12 +785,20 @@ Optional reference if anyone asks: Tom Wujec's TED Talk, "Got a wicked problem? 
   <div class="pad">
     <div class="tip-badge sm">
       <span class="tip-num" aria-hidden="true">3</span>
-      <div><p class="tip-of">Tip 3 · Try this tomorrow</p><p class="tip-name">Fix the Workflow First</p></div>
+      <div><p class="tip-of">Tip 3 · Try this tomorrow</p><p class="tip-name">Teach AI Your Process</p></div>
     </div>
     <div class="oa">
       <p class="yt-hand">Try this tomorrow!</p>
-      <h2 class="oa-head long">Map one task you do all the time.</h2>
-      <p class="oa-text">Write down the steps. Then ask AI, "What might I be missing?" Check its ideas yourself.</p>
+      <h2 class="oa-head long">Teach AI something you already know.</h2>
+      <div class="oa-prompt"><p id="p3-prompt">"Interview me about a task I do regularly. Ask me questions one at a time until you understand my process. Then help me turn it into clear, repeatable instructions you can follow."</p><button class="copy" type="button" data-copy="p3-prompt">Copy</button></div>
+    </div>
+    <div class="deeper">
+      <svg class="qr" viewBox="0 0 35 35" role="img" aria-label="QR code for the video" shape-rendering="crispEdges"><rect width="35" height="35" fill="#FFFDF8"/><path d="M1 1h1v1h-1zM2 1h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM5 1h1v1h-1zM6 1h1v1h-1zM7 1h1v1h-1zM12 1h1v1h-1zM13 1h1v1h-1zM15 1h1v1h-1zM19 1h1v1h-1zM20 1h1v1h-1zM21 1h1v1h-1zM22 1h1v1h-1zM24 1h1v1h-1zM27 1h1v1h-1zM28 1h1v1h-1zM29 1h1v1h-1zM30 1h1v1h-1zM31 1h1v1h-1zM32 1h1v1h-1zM33 1h1v1h-1zM1 2h1v1h-1zM7 2h1v1h-1zM10 2h1v1h-1zM12 2h1v1h-1zM13 2h1v1h-1zM16 2h1v1h-1zM19 2h1v1h-1zM21 2h1v1h-1zM22 2h1v1h-1zM27 2h1v1h-1zM33 2h1v1h-1zM1 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM7 3h1v1h-1zM9 3h1v1h-1zM10 3h1v1h-1zM11 3h1v1h-1zM12 3h1v1h-1zM15 3h1v1h-1zM16 3h1v1h-1zM20 3h1v1h-1zM22 3h1v1h-1zM23 3h1v1h-1zM25 3h1v1h-1zM27 3h1v1h-1zM29 3h1v1h-1zM30 3h1v1h-1zM31 3h1v1h-1zM33 3h1v1h-1zM1 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM7 4h1v1h-1zM9 4h1v1h-1zM11 4h1v1h-1zM19 4h1v1h-1zM22 4h1v1h-1zM24 4h1v1h-1zM25 4h1v1h-1zM27 4h1v1h-1zM29 4h1v1h-1zM30 4h1v1h-1zM31 4h1v1h-1zM33 4h1v1h-1zM1 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM7 5h1v1h-1zM9 5h1v1h-1zM11 5h1v1h-1zM13 5h1v1h-1zM14 5h1v1h-1zM15 5h1v1h-1zM16 5h1v1h-1zM17 5h1v1h-1zM18 5h1v1h-1zM21 5h1v1h-1zM23 5h1v1h-1zM27 5h1v1h-1zM29 5h1v1h-1zM30 5h1v1h-1zM31 5h1v1h-1zM33 5h1v1h-1zM1 6h1v1h-1zM7 6h1v1h-1zM9 6h1v1h-1zM11 6h1v1h-1zM12 6h1v1h-1zM14 6h1v1h-1zM15 6h1v1h-1zM18 6h1v1h-1zM20 6h1v1h-1zM23 6h1v1h-1zM24 6h1v1h-1zM25 6h1v1h-1zM27 6h1v1h-1zM33 6h1v1h-1zM1 7h1v1h-1zM2 7h1v1h-1zM3 7h1v1h-1zM4 7h1v1h-1zM5 7h1v1h-1zM6 7h1v1h-1zM7 7h1v1h-1zM9 7h1v1h-1zM11 7h1v1h-1zM13 7h1v1h-1zM15 7h1v1h-1zM17 7h1v1h-1zM19 7h1v1h-1zM21 7h1v1h-1zM23 7h1v1h-1zM25 7h1v1h-1zM27 7h1v1h-1zM28 7h1v1h-1zM29 7h1v1h-1zM30 7h1v1h-1zM31 7h1v1h-1zM32 7h1v1h-1zM33 7h1v1h-1zM9 8h1v1h-1zM11 8h1v1h-1zM12 8h1v1h-1zM13 8h1v1h-1zM15 8h1v1h-1zM17 8h1v1h-1zM20 8h1v1h-1zM21 8h1v1h-1zM22 8h1v1h-1zM23 8h1v1h-1zM24 8h1v1h-1zM1 9h1v1h-1zM3 9h1v1h-1zM4 9h1v1h-1zM5 9h1v1h-1zM6 9h1v1h-1zM7 9h1v1h-1zM10 9h1v1h-1zM11 9h1v1h-1zM13 9h1v1h-1zM14 9h1v1h-1zM15 9h1v1h-1zM18 9h1v1h-1zM20 9h1v1h-1zM23 9h1v1h-1zM24 9h1v1h-1zM27 9h1v1h-1zM28 9h1v1h-1zM29 9h1v1h-1zM30 9h1v1h-1zM31 9h1v1h-1zM1 10h1v1h-1zM3 10h1v1h-1zM4 10h1v1h-1zM6 10h1v1h-1zM9 10h1v1h-1zM11 10h1v1h-1zM12 10h1v1h-1zM14 10h1v1h-1zM15 10h1v1h-1zM17 10h1v1h-1zM18 10h1v1h-1zM19 10h1v1h-1zM20 10h1v1h-1zM21 10h1v1h-1zM23 10h1v1h-1zM24 10h1v1h-1zM27 10h1v1h-1zM28 10h1v1h-1zM30 10h1v1h-1zM31 10h1v1h-1zM3 11h1v1h-1zM5 11h1v1h-1zM7 11h1v1h-1zM8 11h1v1h-1zM9 11h1v1h-1zM10 11h1v1h-1zM11 11h1v1h-1zM12 11h1v1h-1zM13 11h1v1h-1zM14 11h1v1h-1zM15 11h1v1h-1zM16 11h1v1h-1zM17 11h1v1h-1zM18 11h1v1h-1zM23 11h1v1h-1zM25 11h1v1h-1zM26 11h1v1h-1zM27 11h1v1h-1zM29 11h1v1h-1zM31 11h1v1h-1zM32 11h1v1h-1zM2 12h1v1h-1zM3 12h1v1h-1zM5 12h1v1h-1zM6 12h1v1h-1zM8 12h1v1h-1zM11 12h1v1h-1zM12 12h1v1h-1zM14 12h1v1h-1zM18 12h1v1h-1zM19 12h1v1h-1zM20 12h1v1h-1zM21 12h1v1h-1zM24 12h1v1h-1zM26 12h1v1h-1zM29 12h1v1h-1zM30 12h1v1h-1zM31 12h1v1h-1zM33 12h1v1h-1zM1 13h1v1h-1zM4 13h1v1h-1zM7 13h1v1h-1zM8 13h1v1h-1zM9 13h1v1h-1zM10 13h1v1h-1zM13 13h1v1h-1zM15 13h1v1h-1zM16 13h1v1h-1zM17 13h1v1h-1zM20 13h1v1h-1zM21 13h1v1h-1zM22 13h1v1h-1zM23 13h1v1h-1zM24 13h1v1h-1zM25 13h1v1h-1zM26 13h1v1h-1zM28 13h1v1h-1zM29 13h1v1h-1zM30 13h1v1h-1zM32 13h1v1h-1zM1 14h1v1h-1zM2 14h1v1h-1zM3 14h1v1h-1zM5 14h1v1h-1zM8 14h1v1h-1zM10 14h1v1h-1zM11 14h1v1h-1zM13 14h1v1h-1zM14 14h1v1h-1zM16 14h1v1h-1zM18 14h1v1h-1zM19 14h1v1h-1zM22 14h1v1h-1zM25 14h1v1h-1zM27 14h1v1h-1zM28 14h1v1h-1zM31 14h1v1h-1zM32 14h1v1h-1zM33 14h1v1h-1zM1 15h1v1h-1zM3 15h1v1h-1zM7 15h1v1h-1zM13 15h1v1h-1zM15 15h1v1h-1zM16 15h1v1h-1zM17 15h1v1h-1zM21 15h1v1h-1zM22 15h1v1h-1zM23 15h1v1h-1zM26 15h1v1h-1zM27 15h1v1h-1zM28 15h1v1h-1zM29 15h1v1h-1zM30 15h1v1h-1zM31 15h1v1h-1zM32 15h1v1h-1zM2 16h1v1h-1zM3 16h1v1h-1zM6 16h1v1h-1zM9 16h1v1h-1zM13 16h1v1h-1zM14 16h1v1h-1zM15 16h1v1h-1zM16 16h1v1h-1zM22 16h1v1h-1zM23 16h1v1h-1zM25 16h1v1h-1zM26 16h1v1h-1zM27 16h1v1h-1zM28 16h1v1h-1zM30 16h1v1h-1zM31 16h1v1h-1zM1 17h1v1h-1zM3 17h1v1h-1zM5 17h1v1h-1zM6 17h1v1h-1zM7 17h1v1h-1zM13 17h1v1h-1zM14 17h1v1h-1zM15 17h1v1h-1zM16 17h1v1h-1zM18 17h1v1h-1zM19 17h1v1h-1zM23 17h1v1h-1zM24 17h1v1h-1zM25 17h1v1h-1zM26 17h1v1h-1zM28 17h1v1h-1zM29 17h1v1h-1zM30 17h1v1h-1zM33 17h1v1h-1zM1 18h1v1h-1zM3 18h1v1h-1zM4 18h1v1h-1zM5 18h1v1h-1zM6 18h1v1h-1zM11 18h1v1h-1zM15 18h1v1h-1zM17 18h1v1h-1zM19 18h1v1h-1zM20 18h1v1h-1zM22 18h1v1h-1zM23 18h1v1h-1zM24 18h1v1h-1zM25 18h1v1h-1zM26 18h1v1h-1zM27 18h1v1h-1zM28 18h1v1h-1zM30 18h1v1h-1zM31 18h1v1h-1zM32 18h1v1h-1zM33 18h1v1h-1zM1 19h1v1h-1zM2 19h1v1h-1zM3 19h1v1h-1zM4 19h1v1h-1zM7 19h1v1h-1zM8 19h1v1h-1zM12 19h1v1h-1zM14 19h1v1h-1zM16 19h1v1h-1zM19 19h1v1h-1zM21 19h1v1h-1zM22 19h1v1h-1zM27 19h1v1h-1zM28 19h1v1h-1zM29 19h1v1h-1zM31 19h1v1h-1zM1 20h1v1h-1zM3 20h1v1h-1zM6 20h1v1h-1zM8 20h1v1h-1zM10 20h1v1h-1zM11 20h1v1h-1zM12 20h1v1h-1zM14 20h1v1h-1zM15 20h1v1h-1zM16 20h1v1h-1zM17 20h1v1h-1zM21 20h1v1h-1zM22 20h1v1h-1zM23 20h1v1h-1zM24 20h1v1h-1zM26 20h1v1h-1zM27 20h1v1h-1zM28 20h1v1h-1zM29 20h1v1h-1zM30 20h1v1h-1zM31 20h1v1h-1zM32 20h1v1h-1zM2 21h1v1h-1zM4 21h1v1h-1zM5 21h1v1h-1zM6 21h1v1h-1zM7 21h1v1h-1zM9 21h1v1h-1zM11 21h1v1h-1zM12 21h1v1h-1zM14 21h1v1h-1zM15 21h1v1h-1zM16 21h1v1h-1zM19 21h1v1h-1zM22 21h1v1h-1zM26 21h1v1h-1zM29 21h1v1h-1zM30 21h1v1h-1zM32 21h1v1h-1zM33 21h1v1h-1zM1 22h1v1h-1zM2 22h1v1h-1zM6 22h1v1h-1zM10 22h1v1h-1zM12 22h1v1h-1zM14 22h1v1h-1zM15 22h1v1h-1zM16 22h1v1h-1zM17 22h1v1h-1zM18 22h1v1h-1zM21 22h1v1h-1zM22 22h1v1h-1zM23 22h1v1h-1zM26 22h1v1h-1zM28 22h1v1h-1zM33 22h1v1h-1zM1 23h1v1h-1zM3 23h1v1h-1zM7 23h1v1h-1zM11 23h1v1h-1zM12 23h1v1h-1zM15 23h1v1h-1zM18 23h1v1h-1zM20 23h1v1h-1zM22 23h1v1h-1zM23 23h1v1h-1zM26 23h1v1h-1zM29 23h1v1h-1zM32 23h1v1h-1zM1 24h1v1h-1zM3 24h1v1h-1zM9 24h1v1h-1zM13 24h1v1h-1zM14 24h1v1h-1zM17 24h1v1h-1zM20 24h1v1h-1zM21 24h1v1h-1zM22 24h1v1h-1zM25 24h1v1h-1zM26 24h1v1h-1zM27 24h1v1h-1zM28 24h1v1h-1zM29 24h1v1h-1zM30 24h1v1h-1zM31 24h1v1h-1zM32 24h1v1h-1zM33 24h1v1h-1zM1 25h1v1h-1zM3 25h1v1h-1zM4 25h1v1h-1zM5 25h1v1h-1zM7 25h1v1h-1zM8 25h1v1h-1zM9 25h1v1h-1zM10 25h1v1h-1zM11 25h1v1h-1zM12 25h1v1h-1zM17 25h1v1h-1zM18 25h1v1h-1zM20 25h1v1h-1zM23 25h1v1h-1zM24 25h1v1h-1zM25 25h1v1h-1zM26 25h1v1h-1zM27 25h1v1h-1zM28 25h1v1h-1zM29 25h1v1h-1zM31 25h1v1h-1zM33 25h1v1h-1zM9 26h1v1h-1zM11 26h1v1h-1zM12 26h1v1h-1zM17 26h1v1h-1zM18 26h1v1h-1zM20 26h1v1h-1zM21 26h1v1h-1zM23 26h1v1h-1zM24 26h1v1h-1zM25 26h1v1h-1zM29 26h1v1h-1zM31 26h1v1h-1zM32 26h1v1h-1zM33 26h1v1h-1zM1 27h1v1h-1zM2 27h1v1h-1zM3 27h1v1h-1zM4 27h1v1h-1zM5 27h1v1h-1zM6 27h1v1h-1zM7 27h1v1h-1zM10 27h1v1h-1zM12 27h1v1h-1zM13 27h1v1h-1zM16 27h1v1h-1zM17 27h1v1h-1zM18 27h1v1h-1zM23 27h1v1h-1zM24 27h1v1h-1zM25 27h1v1h-1zM27 27h1v1h-1zM29 27h1v1h-1zM31 27h1v1h-1zM1 28h1v1h-1zM7 28h1v1h-1zM9 28h1v1h-1zM10 28h1v1h-1zM11 28h1v1h-1zM13 28h1v1h-1zM14 28h1v1h-1zM15 28h1v1h-1zM16 28h1v1h-1zM18 28h1v1h-1zM19 28h1v1h-1zM20 28h1v1h-1zM24 28h1v1h-1zM25 28h1v1h-1zM29 28h1v1h-1zM30 28h1v1h-1zM31 28h1v1h-1zM33 28h1v1h-1zM1 29h1v1h-1zM3 29h1v1h-1zM4 29h1v1h-1zM5 29h1v1h-1zM7 29h1v1h-1zM9 29h1v1h-1zM12 29h1v1h-1zM13 29h1v1h-1zM16 29h1v1h-1zM17 29h1v1h-1zM21 29h1v1h-1zM22 29h1v1h-1zM23 29h1v1h-1zM25 29h1v1h-1zM26 29h1v1h-1zM27 29h1v1h-1zM28 29h1v1h-1zM29 29h1v1h-1zM30 29h1v1h-1zM32 29h1v1h-1zM1 30h1v1h-1zM3 30h1v1h-1zM4 30h1v1h-1zM5 30h1v1h-1zM7 30h1v1h-1zM9 30h1v1h-1zM11 30h1v1h-1zM12 30h1v1h-1zM13 30h1v1h-1zM15 30h1v1h-1zM16 30h1v1h-1zM19 30h1v1h-1zM22 30h1v1h-1zM24 30h1v1h-1zM26 30h1v1h-1zM29 30h1v1h-1zM30 30h1v1h-1zM33 30h1v1h-1zM1 31h1v1h-1zM3 31h1v1h-1zM4 31h1v1h-1zM5 31h1v1h-1zM7 31h1v1h-1zM9 31h1v1h-1zM10 31h1v1h-1zM11 31h1v1h-1zM12 31h1v1h-1zM13 31h1v1h-1zM15 31h1v1h-1zM16 31h1v1h-1zM17 31h1v1h-1zM18 31h1v1h-1zM21 31h1v1h-1zM22 31h1v1h-1zM23 31h1v1h-1zM24 31h1v1h-1zM25 31h1v1h-1zM26 31h1v1h-1zM27 31h1v1h-1zM28 31h1v1h-1zM31 31h1v1h-1zM1 32h1v1h-1zM7 32h1v1h-1zM11 32h1v1h-1zM13 32h1v1h-1zM14 32h1v1h-1zM16 32h1v1h-1zM22 32h1v1h-1zM23 32h1v1h-1zM24 32h1v1h-1zM26 32h1v1h-1zM29 32h1v1h-1zM30 32h1v1h-1zM31 32h1v1h-1zM1 33h1v1h-1zM2 33h1v1h-1zM3 33h1v1h-1zM4 33h1v1h-1zM5 33h1v1h-1zM6 33h1v1h-1zM7 33h1v1h-1zM9 33h1v1h-1zM10 33h1v1h-1zM11 33h1v1h-1zM12 33h1v1h-1zM14 33h1v1h-1zM15 33h1v1h-1zM16 33h1v1h-1zM18 33h1v1h-1zM23 33h1v1h-1zM24 33h1v1h-1zM25 33h1v1h-1zM26 33h1v1h-1zM27 33h1v1h-1zM28 33h1v1h-1zM32 33h1v1h-1z" fill="#2B2420"/></svg>
+      <div>
+        <p class="dp-k">Want to go deeper? <span>Optional homework</span></p>
+        <p class="dp-t"><a href="https://www.youtube.com/watch?v=6AzLk2-kWyY" target="_blank" rel="noopener">How I'd Learn AI From Zero in 2026 (the full free course)</a></p>
+        <p class="dp-by">Jake Van Clief on YouTube. Explore workflows and reusable AI skills.</p>
+      </div>
     </div>
   </div>
   <div class="mini-wall" aria-hidden="true">
@@ -710,17 +807,19 @@ Optional reference if anyone asks: Tom Wujec's TED Talk, "Got a wicked problem? 
     <span class="note yellow m2">What did I miss?</span>
   </div>
   <aside class="notes">
-TRY THIS TOMORROW. About five minutes.
+TRY THIS TOMORROW. Teach AI something you already know.
 
-Pick one task you do all the time, like scheduling meetings, onboarding a client, or posting to social media. Write down each step, on sticky notes or a list.
+Use this prompt: "Interview me about a task I do regularly. Ask me questions one at a time until you understand my process. Then help me turn it into clear, repeatable instructions you can follow."
 
-Then paste your steps into AI and ask: "What might I be missing? Ask me questions if anything is unclear."
+It's the same conversation skill from Tip 1, with more structure. In Tip 1 you start talking. Here, AI asks the questions until it understands your process, and you end up with instructions you can reuse.
 
-AI's suggestions aren't automatically right. Read them, keep what's true, and toss what isn't. You understand the work, and you're the one who explains it.
+Then test the instructions, refine them, and save them. Explain, test, refine, reuse.
+
+The Copy button copies the prompt if you share the deck link.
+
+OPTIONAL HOMEWORK. Want to go deeper? Jake Van Clief's free course on YouTube, "How I'd Learn AI From Zero in 2026 (the full free course)," explores workflows and reusable AI skills. Scan the QR code or click the link.
 
 Privacy reminder: leave out customer names, account numbers, and anything private.
-
-Go further: once a process is clear, you can save it as reusable instructions so you don't have to explain it again.
   </aside>
 </section>
 
@@ -729,87 +828,90 @@ Go further: once a process is clear, you can save it as reusable instructions so
      TIP 4 · SLIDE 1: INTRODUCTION (the box)
      2 clicks: the robot pops out, then the surprises fly out.
      ============================================================ -->
-<section class="dark tip-open box-intro" id="tip-4" data-transition="fade">
+<section class="dark tip-open duo-intro" id="tip-4" data-transition="fade">
   <div class="pad">
     <div class="tip-badge">
       <span class="tip-num" aria-hidden="true">4</span>
-      <div><p class="tip-of">Tip 4 · How you explore with AI</p><p class="tip-name">Think Outside the Box</p></div>
+      <div><p class="tip-of">Tip 4 · How you think with AI</p><p class="tip-name">Think Outside the Box</p></div>
     </div>
     <div class="tip-head">
       <h2><span class="lead-in">AI isn't just a writing tool.</span><span class="hot big">Think outside<br>the box.</span></h2>
-      <p class="support">Ask it what you're overlooking.</p>
+      <p class="support">AI can help you discover opportunities and ideas you hadn't considered.</p>
     </div>
   </div>
-  <svg class="box-scene" viewBox="0 0 560 700" role="img" aria-label="An open cardboard box with the friendly AI robot popping out">
-    <g class="box-robot fragment pop" data-fragment-index="1">
-      <g transform="translate(-680 -262)">
-    <rect x="858" y="604" width="204" height="176" rx="84" fill="#FFFDF8" stroke="#FBF4E8" stroke-width="6"/>
-    <text x="960" y="726" text-anchor="middle" font-family="Inter Tight, Inter, sans-serif" font-size="60" font-weight="700" fill="#2B2420">AI</text>
-    <rect x="796" y="462" width="34" height="88" rx="17" fill="#2A7C82" stroke="#FBF4E8" stroke-width="5"/>
-    <rect x="1090" y="462" width="34" height="88" rx="17" fill="#2A7C82" stroke="#FBF4E8" stroke-width="5"/>
-    <rect x="822" y="372" width="276" height="250" rx="116" fill="#FFFDF8" stroke="#FBF4E8" stroke-width="6"/>
-    <rect x="856" y="420" width="208" height="150" rx="72" fill="#2B2420"/>
-    <path class="ai-eye" d="M892 502 Q914 474 936 502" fill="none" stroke="#FBF4E8" stroke-width="9" stroke-linecap="round"/>
-    <path class="ai-eye" d="M984 502 Q1006 474 1028 502" fill="none" stroke="#FBF4E8" stroke-width="9" stroke-linecap="round"/>
-    <path d="M942 532 Q960 548 978 532" fill="none" stroke="#FBF4E8" stroke-width="6" stroke-linecap="round"/>
-      </g>
-    </g>
-    <path d="M90 420 L470 420 L470 680 L90 680 Z" fill="#C98F55" stroke="#FBF4E8" stroke-width="6" stroke-linejoin="round"/>
-    <path d="M90 420 L30 340 L250 340 L280 420 Z" fill="#D9A46A" stroke="#FBF4E8" stroke-width="6" stroke-linejoin="round"/>
-    <path d="M470 420 L530 340 L310 340 L280 420 Z" fill="#D9A46A" stroke="#FBF4E8" stroke-width="6" stroke-linejoin="round"/>
-    <path d="M230 470 H330" stroke="#8E5F33" stroke-width="10" stroke-linecap="round"/>
+  <!-- Close-up: Ginger and the robot, thinking partners -->
+  <div class="duo-ginger" aria-hidden="true"><img src="img/ginger-character.png" alt=""></div>
+  <svg class="duo-robot" viewBox="770 280 380 520" aria-hidden="true">
+      <rect x="858" y="604" width="204" height="176" rx="84" fill="#FFFDF8" stroke="#FBF4E8" stroke-width="6"/>
+      <text x="960" y="726" text-anchor="middle" font-family="Inter Tight, Inter, sans-serif" font-size="60" font-weight="700" fill="#2B2420">AI</text>
+      <rect x="796" y="462" width="34" height="88" rx="17" fill="#2A7C82" stroke="#FBF4E8" stroke-width="5"/>
+      <rect x="1090" y="462" width="34" height="88" rx="17" fill="#2A7C82" stroke="#FBF4E8" stroke-width="5"/>
+      <rect x="822" y="372" width="276" height="250" rx="116" fill="#FFFDF8" stroke="#FBF4E8" stroke-width="6"/>
+      <rect x="856" y="420" width="208" height="150" rx="72" fill="#2B2420"/>
+      <path class="ai-eye" d="M892 502 Q914 474 936 502" fill="none" stroke="#FBF4E8" stroke-width="9" stroke-linecap="round"/>
+      <path class="ai-eye" d="M984 502 Q1006 474 1028 502" fill="none" stroke="#FBF4E8" stroke-width="9" stroke-linecap="round"/>
+      <path d="M942 532 Q960 548 978 532" fill="none" stroke="#FBF4E8" stroke-width="6" stroke-linecap="round"/>
   </svg>
-  <p class="pop-tag p1 fragment pop" data-fragment-index="2">Read your reviews</p>
-  <p class="pop-tag p2 fragment pop" data-fragment-index="2">Practice tough talks</p>
-  <p class="pop-tag p3 fragment pop" data-fragment-index="2">Read a spreadsheet</p>
+  <p class="duo-b db1 fragment pop" data-fragment-index="1">"What am I missing?"</p>
+  <p class="duo-b db2 fragment pop" data-fragment-index="2">"Have you looked at your reviews?"</p>
+  <p class="duo-b db3 fragment pop" data-fragment-index="3">"Ooh. Tell me more."</p>
+
   <aside class="notes">
-THE TIP. This is tip 4 of 4. Tip 4 is how you explore with AI.
+THE TIP. This is tip 4 of 4. Think outside the box. This is how you think with AI.
 
-Most people use AI to write emails or look things up. That's the box.
+AI can help you discover opportunities and ideas you hadn't considered.
 
-[CLICK 1] But AI can do a lot more than write.
+This isn't another lesson on prompting. Tip 1 got you talking. This is where those conversations can take you. Think of AI as a thinking partner.
 
-[CLICK 2] It can read your reviews, help you practice hard conversations, make sense of a spreadsheet. Things most business owners never think to try.
+[CLICK 1] "What am I missing?"
 
-Transition: Let's play a quick game.
+[CLICK 2] AI comes back with a question of its own. "Have you looked at your reviews?"
+
+[CLICK 3] "Ooh. Tell me more." That's the back and forth. You bring the business knowledge. AI brings a fresh angle.
+
+Transition: Let's look at where that can go.
   </aside>
 </section>
 
-<!-- ============================================================
-     TIP 4 · SLIDE 2: BET YOU DIDN'T KNOW
-     6 clicks: one surprising use per click.
-     ============================================================ -->
-<section class="light surprises" id="tip-4-ideas" data-transition="fade">
+<section class="light discover" id="tip-4-ideas" data-transition="fade">
   <div class="pad">
     <div class="tip-badge sm">
       <span class="tip-num" aria-hidden="true">4</span>
       <div><p class="tip-of">Tip 4 · Ideas</p><p class="tip-name">Think Outside the Box</p></div>
     </div>
-    <h2 class="l">Bet you didn't know AI could…</h2>
-    <div class="idea-grid">
-      <div class="idea fragment pop"><h3>Mine your reviews</h3><p>Find what customers love that you never mention.</p></div>
-      <div class="idea fragment pop"><h3>Play your toughest customer</h3><p>Practice a price increase before the real conversation.</p></div>
-      <div class="idea fragment pop"><h3>Read your spreadsheet</h3><p>Ask what changed in your sales, and why it might have.</p></div>
-      <div class="idea fragment pop"><h3>Decode a messy photo</h3><p>Snap your whiteboard. Get a clean list of action items.</p></div>
-    </div>
+    <h2 class="l">Where could one conversation take you?</h2>
+  </div>
+  <svg class="disc-path" viewBox="0 0 1920 1080" aria-hidden="true"><path d="M140 470 C 230 420, 280 395, 330 395 S 600 565, 750 565 S 1020 395, 1170 395 S 1440 565, 1590 565 S 1760 520, 1820 500" fill="none" stroke="#D9C4A8" stroke-width="6" stroke-linecap="round" stroke-dasharray="4 16"/></svg>
+  <div class="disc d1 fragment pop">
+    <span class="disc-ic"><svg viewBox="0 0 160 160" aria-hidden="true"><path d="M22 30h116a12 12 0 0 1 12 12v58a12 12 0 0 1-12 12H72l-28 24v-24H22a12 12 0 0 1-12-12V42a12 12 0 0 1 12-12z" fill="#FFFDF8" stroke="#2B2420" stroke-width="6" stroke-linejoin="round"/><g fill="#F2B544" stroke="#2B2420" stroke-width="4" stroke-linejoin="round"><path d="M46.0 50.0 L51.3 62.7 L65.0 63.8 L54.6 72.8 L57.8 86.2 L46.0 79.0 L34.2 86.2 L37.4 72.8 L27.0 63.8 L40.7 62.7 Z"/><path d="M80.0 50.0 L85.3 62.7 L99.0 63.8 L88.6 72.8 L91.8 86.2 L80.0 79.0 L68.2 86.2 L71.4 72.8 L61.0 63.8 L74.7 62.7 Z"/><path d="M114.0 50.0 L119.3 62.7 L133.0 63.8 L122.6 72.8 L125.8 86.2 L114.0 79.0 L102.2 86.2 L105.4 72.8 L95.0 63.8 L108.7 62.7 Z"/></g></svg></span>
+    <h3>Customer reviews</h3><p>Discover what customers love that you're not promoting.</p><p class="bring">You bring: your reviews</p>
+  </div>
+  <div class="disc d2 fragment pop">
+    <span class="disc-ic"><svg viewBox="0 0 160 160" aria-hidden="true"><path d="M30 30 H86 L140 84 L84 140 L30 86 Z" fill="#F2B544" stroke="#2B2420" stroke-width="6" stroke-linejoin="round"/><circle cx="54" cy="54" r="9" fill="#FFFDF8" stroke="#2B2420" stroke-width="5"/><text x="90" y="112" text-anchor="middle" font-family="Inter Tight, Inter, sans-serif" font-weight="700" font-size="54" fill="#2B2420" transform="rotate(-45 90 96)">$</text></svg></span>
+    <h3>Pricing</h3><p>Explore pricing ideas and how customers might react.</p><p class="bring">You bring: your prices and costs</p>
+  </div>
+  <div class="disc d3 fragment pop">
+    <span class="disc-ic"><svg viewBox="0 0 160 160" aria-hidden="true"><path d="M8 140 H152" stroke="#2B2420" stroke-width="6" stroke-linecap="round"/><rect x="14" y="70" width="46" height="70" fill="#FFFDF8" stroke="#2B2420" stroke-width="5"/><path d="M10 54 H64 L60 74 H14 Z" fill="#2A7C82" stroke="#2B2420" stroke-width="5" stroke-linejoin="round"/><rect x="100" y="70" width="46" height="70" fill="#FFFDF8" stroke="#2B2420" stroke-width="5"/><path d="M96 54 H150 L146 74 H100 Z" fill="#B8401F" stroke="#2B2420" stroke-width="5" stroke-linejoin="round"/><rect x="66" y="78" width="28" height="62" rx="4" fill="none" stroke="#B8401F" stroke-width="4" stroke-dasharray="7 6"/><path d="M80 34 V54 M70 44 H90" stroke="#F2B544" stroke-width="7" stroke-linecap="round"/></svg></span>
+    <h3>Competitors</h3><p>Spot gaps and opportunities in your market.</p><p class="bring">You bring: what you know about them</p>
+  </div>
+  <div class="disc d4 fragment pop">
+    <span class="disc-ic"><svg viewBox="0 0 160 160" aria-hidden="true"><path d="M16 140 H148" stroke="#2B2420" stroke-width="6" stroke-linecap="round"/><rect x="26" y="98" width="24" height="42" fill="#2A7C82" stroke="#2B2420" stroke-width="4"/><rect x="60" y="80" width="24" height="60" fill="#2A7C82" stroke="#2B2420" stroke-width="4"/><rect x="94" y="88" width="24" height="52" fill="#2A7C82" stroke="#2B2420" stroke-width="4"/><rect x="128" y="56" width="24" height="84" fill="#F2B544" stroke="#2B2420" stroke-width="4"/><path d="M22 78 L58 58 L96 66 L136 26" fill="none" stroke="#B8401F" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 10"/><path d="M122 24 L140 22 L138 40" fill="none" stroke="#B8401F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <h3>Sales data</h3><p>Find patterns or trends you might have missed.</p><p class="bring">You bring: your sales numbers</p>
   </div>
   <aside class="notes">
-AUDIENCE MOMENT: PREDICTION (30 seconds)
-Before the first click, ask: "Shout out something you didn't know AI could do for your business." Take two or three answers.
+AUDIENCE MOMENT (30 seconds). Before the first click, ask: "What's one question about your business you wish you had time to think through?" Take two or three answers.
 
-Then reveal one at a time.
+Then reveal one at a time. Each one starts with something you bring to the conversation.
 
-[CLICK 1] Mine your reviews. Paste in your public reviews and ask what customers love that you never mention in your marketing. (We'll see this on the next slide.)
+[CLICK 1] Customer reviews. Paste in your reviews and ask what customers love that you're not promoting. (We'll see this on the next slide.)
 
-[CLICK 2] Play your toughest customer. Ask AI to play a customer who's upset about a price increase, and practice your response.
+[CLICK 2] Pricing. Share your prices and costs. Explore pricing ideas, and ask AI to play a customer reacting to a price change.
 
-[CLICK 3] Read your spreadsheet. Upload your sales export and ask what changed this quarter. Double-check any numbers before you act on them.
+[CLICK 3] Competitors. Share what you know about them, or what's on their websites. Ask where the gaps and opportunities are. AI only knows what you give it or what it can look up, so check anything current.
 
-[CLICK 4] Decode a messy photo. Take a picture of your whiteboard or sticky notes and ask for organized action items.
+[CLICK 4] Sales data. Share your sales numbers and ask what patterns or trends you might have missed. Double-check any numbers before you act on them.
 
-More ideas if there's time: compare competitors' websites to yours and ask what only you do, or give AI a launch date and ask for a week-by-week plan.
-
-Privacy reminder: Remove customer names, emails, and private data before you upload anything.
+Privacy reminder: remove customer names, emails, and private data before you upload anything.
   </aside>
 </section>
 
@@ -868,18 +970,120 @@ Use public reviews only, and don't paste in private customer information.
     </div>
     <div class="oa">
       <p class="yt-hand">Try this tomorrow!</p>
-      <h2 class="oa-head long">Ask what you're overlooking.</h2>
-      <p class="oa-text">"Based on what you know about my business, what are five ways I could be using AI that I'm overlooking?"</p>
+      <h2 class="oa-head long">What opportunities are you overlooking?</h2>
+      <div class="oa-prompt"><p id="p4-prompt">"Based on what you know about my business, ask me questions to help uncover opportunities I haven't considered."</p><button class="copy" type="button" data-copy="p4-prompt">Copy</button></div>
     </div>
   </div>
   <aside class="notes">
 TRY THIS TOMORROW. About five minutes.
 
-Give AI a little context about your business first (Tip 1), or use a chat that already knows you. Then ask: "Based on what you know about my business, what are five ways I could be using AI that I'm overlooking?"
+Give AI a little context about your business first (Tip 1), or use a chat that already knows you. Then ask: "Based on what you know about my business, ask me questions to help uncover opportunities I haven't considered."
 
-Push back on the list (Tip 2). Then pick the one idea that excites you most and try it.
+Tip 1 taught you how to start talking to AI. This is where those conversations can take you.
+
+Push back on what it suggests (Tip 2). Then pick the one idea that excites you most and try it.
 
 You decide what's worth trying. AI just widens the menu.
+  </aside>
+</section>
+
+
+
+<!-- ============================================================
+     CLOSING · BEHIND THE SCENES: HOW I BUILT THIS PRESENTATION
+     Ginger stays in the middle. 7 clicks:
+     1 ChatGPT, 2 Claude Code, 3 Perplexity, 4 Pen and paper, 5 GitHub,
+     6 key message band, 7 closing statement takes over the slide.
+     Tool icons are simple original drawings, not company logos.
+     ============================================================ -->
+<section class="light built" id="how-i-built" data-transition="fade">
+  <div class="pad">
+    <p class="eyebrow">Behind the scenes</p>
+    <h2 class="l">How I built this presentation.</h2>
+  </div>
+  <p class="bt-director">I called the shots.</p>
+  <img class="bt-ginger" src="img/ginger-character.png" alt="Illustrated Ginger in the middle, directing the tools around her">
+  <div class="bt-card c-chat fragment pop" data-fragment-index="1">
+    <span class="bt-ic"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 14h32a6 6 0 0 1 6 6v14a6 6 0 0 1-6 6H24l-10 8v-8h-4a6 6 0 0 1-6-6V20a6 6 0 0 1 6-6z" fill="#2A7C82"/><path d="M30 44h18l8 6v-6a5 5 0 0 0 5-5V29a5 5 0 0 0-5-5h-4" fill="none" stroke="#2A7C82" stroke-width="4" stroke-linejoin="round"/><circle cx="17" cy="27" r="3" fill="#FBF4E8"/><circle cx="26" cy="27" r="3" fill="#FBF4E8"/><circle cx="35" cy="27" r="3" fill="#FBF4E8"/></svg></span>
+    <div><p class="bt-name">ChatGPT <span class="bt-price">$20/mo</span></p><p class="bt-role">Thought partner. Brainstorming, organizing ideas, challenging my thinking, and writing prompts.</p></div>
+  </div>
+  <div class="bt-card c-code fragment pop" data-fragment-index="2">
+    <span class="bt-ic"><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="32" rx="5" fill="#B8401F"/><path d="M4 48h56l-4 6H8z" fill="#2B2420"/><path d="M26 22l-7 6 7 6M38 22l7 6-7 6" fill="none" stroke="#FBF4E8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <div><p class="bt-name">Claude Code Desktop <span class="bt-price">$20/mo</span></p><p class="bt-role">Coding and building the presentation.</p></div>
+  </div>
+  <div class="bt-card c-search fragment pop" data-fragment-index="3">
+    <span class="bt-ic"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="27" cy="27" r="16" fill="#FBF4E8" stroke="#2B2420" stroke-width="6"/><circle cx="27" cy="27" r="8" fill="#F2B544"/><path d="M39 39l15 15" stroke="#2B2420" stroke-width="8" stroke-linecap="round"/></svg></span>
+    <div><p class="bt-name">Perplexity <span class="bt-price">Free</span></p><p class="bt-role">Research, fact-checking, and finding sources.</p></div>
+  </div>
+  <div class="bt-paper fragment pop" data-fragment-index="4">
+    <span class="bt-under note pink" aria-hidden="true"></span>
+    <div class="bt-sticky note yellow">
+      <p class="bt-hand-name">Pen, paper &amp; Post-its</p>
+      <p class="bt-hand-role">Brainstorming, sketching, and working through ideas away from the screen.</p>
+      <svg class="bt-scribble" viewBox="0 0 220 40" aria-hidden="true"><path d="M6 26 C 30 6, 50 36, 76 18 S 120 8, 140 24 S 190 30, 214 12" fill="none" stroke="#B8401F" stroke-width="5" stroke-linecap="round"/></svg>
+    </div>
+  </div>
+  <div class="bt-card c-git fragment pop" data-fragment-index="5">
+    <span class="bt-ic"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 8l24 12-24 12L8 20z" fill="#2B2420"/><path d="M8 32l24 12 24-12" fill="none" stroke="#2B2420" stroke-width="5" stroke-linejoin="round"/><path d="M8 44l24 12 24-12" fill="none" stroke="#F2B544" stroke-width="5" stroke-linejoin="round"/></svg></span>
+    <div><p class="bt-name">GitHub <span class="bt-price">Free</span></p><p class="bt-role">Stores and tracks every version of the presentation's code.</p></div>
+  </div>
+  <p class="band bt-band fragment pop" data-fragment-index="6">Not one magic prompt. <b>Conversations, research, experiments, revisions, critical thinking, and creativity.</b></p>
+  <div class="bt-quote fragment fade-in" data-fragment-index="7">
+    <p class="setup">AI helped me build this presentation.</p>
+    <p class="setup">But it didn't decide what I wanted to say.</p>
+    <p class="punch">I did.</p>
+  </div>
+  <aside class="notes">
+BEHIND THE SCENES. Before we wrap up, I want to show you how I actually built this presentation. Because yes, I used AI. A lot of it.
+
+[CLICK 1] ChatGPT, about $20 a month. This was my thought partner. I used it for brainstorming, long conversations, organizing my ideas, challenging my thinking, and writing prompts for the other tools.
+
+[CLICK 2] Claude Code Desktop, about $20 a month. This did the coding. It built the slides you're looking at right now.
+
+[CLICK 3] Perplexity, free. Research, fact-checking, and finding sources. Every stat I showed you, I checked.
+
+[CLICK 4] Pen, paper, and Post-it notes. Free, and still my favorite. Brainstorming, sketching, and working through ideas away from the screen.
+
+[CLICK 5] GitHub, free. It stores the presentation's code and keeps track of every version, so nothing gets lost.
+
+Notice who's in the middle. Me. I decided what each tool did and when.
+
+[CLICK 6] This was not one magic prompt. It was conversations, research, experiments, revisions, critical thinking, and creativity. Lots of back and forth. Lots of "no, not like that."
+
+[CLICK 7] AI helped me build this presentation. But it didn't decide what I wanted to say. I did.
+
+[Pause. Let that land.]
+  </aside>
+</section>
+
+<!-- ============================================================
+     CLOSING · AI IS THE TOOL. COMMUNICATION IS THE SKILL. YOU'RE STILL THE EXPERT.
+     3 clicks: line 2, line 3, then the invitation.
+     ============================================================ -->
+<section class="dark finale3" id="closing" data-transition="fade" data-transition-speed="slow">
+  <div class="pad">
+    <p class="f3 f3-1">AI is the tool.</p>
+    <p class="f3 f3-2 fragment pop">Communication is the skill.</p>
+    <p class="f3 f3-3 fragment pop">You're still the expert.</p>
+    <div class="fin-row fragment pop">
+      <span class="fin-bubble" aria-hidden="true"><i></i><i></i><i></i></span>
+      <p class="f3-invite">Start a conversation. <b>See where it takes you.</b></p>
+    </div>
+  </div>
+  <aside class="notes">
+CLOSING. Slow down here.
+
+AI is the tool.
+
+[CLICK] Communication is the skill.
+
+[CLICK] And you're still the expert.
+
+Four tips. Talk to AI. Challenge AI. Guide AI. Think with AI. Every one of them is a communication skill you already have.
+
+[CLICK] So start a conversation. See where it takes you.
+
+Thank you!
   </aside>
 </section>
 
@@ -891,10 +1095,10 @@ You decide what's worth trying. AI just widens the menu.
     <p class="yt-hand on-dark">Keep learning!</p>
     <h2 class="xl">My favorite resources.</h2>
     <div class="res-grid">
-      <div class="res"><p class="res-kind">Podcast</p><h3>The AI Daily Brief</h3><p>Daily AI news, explained by Nathaniel Whittemore.</p></div>
-      <div class="res"><p class="res-kind">Podcast</p><h3>AI SIX Podcast</h3><p>Short, practical AI episodes.</p></div>
-      <div class="res"><p class="res-kind">Community</p><h3>RMAIIG</h3><p>Rocky Mountain Artificial Intelligence Interest Group. Free meetups, no tech background needed.</p></div>
-      <div class="res more"><p class="res-kind">More coming</p><h3>[Resource]</h3><p>[Add your next favorite here.]</p></div>
+      <a class="res" href="https://www.youtube.com/@AIDailyBrief" target="_blank" rel="noopener"><img class="res-img" src="img/res-aidaily.jpg" alt="" style="object-position:center bottom"><div class="res-body"><p class="res-kind">Podcast</p><h3>The AI Daily Brief</h3><p>Daily AI news, explained by Nathaniel Whittemore.</p><span class="res-go">Watch &#8599;</span></div></a>
+      <div class="res"><img class="res-img" src="img/res-aisix.jpg" alt="" style="object-position:center"><div class="res-body"><p class="res-kind">Podcast</p><h3>AI SIX Podcast</h3><p>Joanne Sweeney's podcast for marketers embracing the AI age.</p></div></div>
+      <a class="res" href="https://rmaiig.org/" target="_blank" rel="noopener"><img class="res-img" src="img/res-rmaiig.jpg" alt="" style="object-position:center bottom"><div class="res-body"><p class="res-kind">Community</p><h3>RMAIIG</h3><p>Rocky Mountain Artificial Intelligence Interest Group. Free meetups, no tech background needed.</p><span class="res-go">Visit &#8599;</span></div></a>
+      <a class="res" href="https://www.youtube.com/watch?v=6AzLk2-kWyY" target="_blank" rel="noopener"><img class="res-img" src="img/res-jake.jpg" alt="" style="object-position:30% center"><div class="res-body"><p class="res-kind">Free course</p><h3>Jake Van Clief</h3><p>How I'd Learn AI From Zero in 2026. A full free course on YouTube.</p><span class="res-go">Watch &#8599;</span></div></a>
     </div>
     <p class="res-close">Pick one tip. Try it tomorrow. <span>AI is the tool. You're still the expert.</span></p>
   </div>
@@ -905,9 +1109,11 @@ The AI Daily Brief: daily AI news and analysis from Nathaniel Whittemore. Great 
 
 AI SIX Podcast: [add one line about why you like it].
 
-RMAIIG, the Rocky Mountain Artificial Intelligence Interest Group: meetups for non-technical people who are curious about AI. Find them on Meetup.
+RMAIIG, the Rocky Mountain Artificial Intelligence Interest Group: meetups for non-technical people who are curious about AI. rmaiig.org
 
-[Add the other resources you find.]
+Jake Van Clief: "How I'd Learn AI From Zero in 2026 (the full free course)." Free on YouTube.
+
+Every card is a live link. Click one to open it in a new tab.
 
 Closing: Don't try to do all four tips. Pick one. Try it tomorrow. AI is the tool. You're still the expert.
 
@@ -982,6 +1188,21 @@ Then open it up for questions.
       Reveal.on("ready", e => e.currentSlide.querySelectorAll(".count.auto").forEach(f => setTimeout(() => play(f), 450)));
     });
   })();
+</script>
+<script>
+  // Video cards: the video loads and plays only when clicked (needs internet).
+  document.addEventListener("click", function (e) {
+    const btn = e.target.closest(".video-card");
+    if (!btn) return;
+    e.stopPropagation();
+    const f = document.createElement("iframe");
+    f.src = "https://www.youtube-nocookie.com/embed/" + btn.dataset.video + "?autoplay=1&rel=0" + (btn.dataset.start ? "&start=" + btn.dataset.start : "");
+    f.title = btn.getAttribute("aria-label");
+    f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+    f.allowFullscreen = true;
+    f.className = "video-frame";
+    btn.replaceWith(f);
+  });
 </script>
 <script>
   const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
