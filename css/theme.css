@@ -1,0 +1,303 @@
+/* ============================================================
+   AI Is the Tool. You're Still the Expert.
+   Design system: storyboard palette, oversized editorial type,
+   one idea per slide. Every slide is a 1920 x 1080 stage.
+   ============================================================ */
+:root {
+  --espresso: #2B2420;   /* dark slides, main text */
+  --espresso-2: #3D332C; /* cards on dark slides */
+  --cream: #FBF4E8;      /* light slides */
+  --sand: #F3E6D0;       /* panels on light slides */
+  --line: #E6D4B8;       /* soft borders */
+  --tomato: #B8401F;     /* accent on light slides (5.2:1 on cream) */
+  --mustard: #F2B544;    /* accent on dark slides */
+  --teal: #2A7C82;       /* "you" */
+  --muted: #4A3F37;      /* body text on light */
+  --muted-dark: #E8DCC8; /* body text on dark */
+
+  --font-display: "Inter Tight", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  --dur: 600ms;
+}
+
+html, body { background: var(--espresso); }
+
+.reveal { font-family: var(--font-body); color: var(--espresso); font-size: 30px; }
+.reveal .slides section { padding: 0; width: 1920px; height: 1080px; text-align: left; box-sizing: border-box; }
+.reveal .slides section.light { background: var(--cream); color: var(--espresso); }
+.reveal .slides section.sand  { background: var(--sand); color: var(--espresso); }
+.reveal .slides section.dark  { background: var(--espresso); color: var(--cream); }
+
+.reveal .controls { color: var(--tomato); }
+.reveal .controls button:focus-visible { outline: 4px solid var(--mustard); outline-offset: 4px; }
+.reveal .progress { color: var(--tomato); height: 6px; }
+
+/* ---------- Shared type scale ----------
+   mega 200 / xl 132 / l 88 / m 60 / body 32 / small 26          */
+.pad { position: absolute; inset: 0; padding: 112px 128px; box-sizing: border-box; display: flex; flex-direction: column; }
+.eyebrow { font: 700 26px/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--tomato); margin: 0; }
+.dark .eyebrow { color: var(--mustard); }
+.mega, .xl, .l { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.045em; margin: 0; text-wrap: balance; }
+.mega { font-size: 200px; line-height: .92; }
+.xl   { font-size: 132px; line-height: .95; }
+.l    { font-size: 88px;  line-height: 1; letter-spacing: -0.035em; }
+.hot  { color: var(--tomato); }
+.dark .hot { color: var(--mustard); }
+.lede { font: 400 38px/1.35 var(--font-body); margin: 0; color: var(--muted); max-width: 1300px; text-wrap: pretty; }
+.dark .lede { color: var(--muted-dark); }
+
+/* ============================================================
+   1. Title
+   ============================================================ */
+.title-slide .pad { justify-content: space-between; }
+.title-slide .mega { font-size: 210px; }
+.title-slide .byline { display: flex; justify-content: space-between; align-items: end; }
+.title-slide .byline p { margin: 0; font: 600 32px/1.3 var(--font-body); color: var(--muted-dark); }
+.title-slide .byline b { color: var(--cream); }
+.title-slide svg.peek { position: absolute; right: 120px; top: 420px; width: 360px; height: 360px; }
+
+/* ============================================================
+   2. Hi, I'm Ginger
+   ============================================================ */
+.me img { position: absolute; left: 0; top: 0; width: 820px; height: 1080px; object-fit: cover; object-position: center 25%; margin: 0; max-width: none; max-height: none; }
+.me .text { position: absolute; left: 920px; right: 120px; top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: center; gap: 30px; }
+.me .xl { font-size: 150px; }
+.me .role { margin: 0; font: 700 46px/1.2 var(--font-display); letter-spacing: -0.02em; color: var(--tomato); }
+
+/* ============================================================
+   3. Communication slide
+   Opens as a big statement with the robot on the right.
+   Click 1 fades the headline, slides the robot to center,
+   and the diagram fills the whole stage.
+   ============================================================ */
+.comm .stage { position: absolute; inset: 0; }
+.comm-headline {
+  position: absolute; left: 128px; top: 0; bottom: 0; width: 1060px; margin: 0;
+  display: flex; align-items: center;
+  font: 700 118px/.98 var(--font-display); letter-spacing: -0.045em; color: var(--espresso); text-wrap: balance;
+}
+.comm-headline .handwrite { display: block; margin: 0 0 28px -4px; font: 600 76px/1 "Caveat", "Bradley Hand", cursive; letter-spacing: 0; color: var(--tomato); transform: rotate(-2deg); transform-origin: left center; }
+.comm svg.scene { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: visible; }
+.comm .bubble-text { font: 500 34px var(--font-display); fill: var(--espresso); }
+
+.comm .robot {
+  transform-box: view-box; transform-origin: 960px 540px;
+  transform: translate(560px, 20px) scale(1.2);
+  transition: transform 900ms var(--ease);
+}
+.comm:has(.comm-headline.visible) .robot { transform: translate(0px, -40px); }
+
+.ginger-toon { position: absolute; left: 60px; top: 202px; height: 576px; width: auto; margin: 0; max-width: none; max-height: none; }
+
+.rcard {
+  position: absolute; box-sizing: border-box; margin: 0; width: 840px;
+  display: grid; grid-template-columns: 92px 1fr; gap: 24px; align-items: start;
+  background: var(--sand); border-radius: 44px; padding: 26px 36px 26px 26px;
+}
+.rcard .num { width: 92px; height: 92px; border-radius: 50%; background: var(--tomato); color: var(--cream); display: grid; place-items: center; font: 700 54px/1 var(--font-display); }
+.rcard h3 { margin: 4px 0 6px; font: 700 52px/1.02 var(--font-display); letter-spacing: -0.03em; color: var(--espresso); }
+.rcard p { margin: 0; font: 400 30px/1.3 var(--font-body); color: var(--muted); }
+.rcard.c1 { left: 60px; top: 40px; }
+.rcard.c2 { left: 1020px; top: 40px; }
+.rcard.c3 { left: 60px; top: 780px; }
+.rcard.c4 { left: 1020px; top: 780px; }
+.rcard .minis { display: flex; gap: 40px; margin-top: 18px; }
+.rcard .minirow { display: flex; gap: 14px; align-items: center; }
+.rcard .minirow svg { width: 64px; height: 64px; flex: none; }
+.rcard .minirow p { font: 400 26px/1.25 var(--font-body); }
+.rcard .minirow b { display: block; font-weight: 700; color: var(--espresso); }
+.rcard .apps { display: flex; gap: 18px; margin-top: 16px; }
+.rcard .apps svg { width: 84px; height: 84px; }
+
+/* Click 1 waits for the headline to fade before arriving */
+.reveal .slides section .f-late.visible { transition-delay: 350ms; }
+.reveal .slides section g.f-late.visible .stroke { transition-delay: 600ms; }
+.reveal .slides section g.f-late.visible .late { transition-delay: 1200ms; }
+
+/* Illustrated Ginger cameo on tip slides: pops in when the slide opens */
+.toon-cameo { position: absolute; margin: 0; width: auto; max-width: none; max-height: none; }
+@keyframes cameo-in { from { opacity: 0; transform: translateY(40px) scale(.96); } to { opacity: 1; transform: none; } }
+.reveal .slides section.present .toon-cameo { animation: cameo-in 700ms var(--ease) 350ms both; }
+
+/* ============================================================
+   4. The statement
+   ============================================================ */
+.statement .pad { justify-content: center; gap: 56px; }
+.statement .setup { margin: 0; font: 500 58px/1.18 var(--font-display); letter-spacing: -0.02em; color: var(--muted-dark); max-width: 1500px; text-wrap: balance; }
+.statement .punch { margin: 0; font: 700 124px/.98 var(--font-display); letter-spacing: -0.045em; color: var(--mustard); max-width: 1640px; text-wrap: balance; }
+
+/* ============================================================
+   5. What you'll walk away with
+   ============================================================ */
+.walk .pad { justify-content: center; gap: 110px; }
+.walk .mega { font-size: 180px; }
+.gains { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 72px; }
+.gains li { display: flex; flex-direction: column; gap: 16px; }
+.gains .n { font: 700 64px/1 var(--font-display); color: var(--tomato); }
+.gains h3 { margin: 0; font: 700 52px/1.05 var(--font-display); letter-spacing: -0.03em; color: var(--espresso); text-wrap: balance; }
+.gains p { margin: 0; font: 400 32px/1.4 var(--font-body); color: var(--muted); text-wrap: pretty; }
+
+/* ============================================================
+   6. Tip opener (reusable for Tips 1 to 5)
+   Badge + two-part headline on the left, visual on the right.
+   ============================================================ */
+.tip-badge { display: flex; align-items: center; gap: 28px; }
+.tip-num { width: 132px; height: 132px; border-radius: 36px; background: var(--mustard); color: var(--espresso); display: grid; place-items: center; font: 700 96px/1 var(--font-display); letter-spacing: -0.04em; flex: none; }
+.tip-of { margin: 0 0 8px; font: 700 28px/1 var(--font-body); letter-spacing: .16em; text-transform: uppercase; color: var(--mustard); }
+.tip-name { margin: 0; font: 700 64px/1 var(--font-display); letter-spacing: -0.03em; color: var(--cream); }
+/* Smaller badge for example and Your Turn slides. Same shape, color, and type. */
+.tip-badge.sm { gap: 22px; }
+.tip-badge.sm .tip-num { width: 96px; height: 96px; border-radius: 26px; font-size: 70px; }
+.tip-badge.sm .tip-of { font-size: 22px; margin-bottom: 8px; }
+.tip-badge.sm .tip-name { font-size: 44px; }
+.light .tip-of { color: var(--tomato); }
+.light .tip-name { color: var(--espresso); }
+.tip-head { margin: auto 0; display: flex; flex-direction: column; gap: 36px; width: 1080px; }
+.tip-head h2 { margin: 0; display: flex; flex-direction: column; gap: 22px; font-family: var(--font-display); font-weight: 700; }
+.tip-head .lead-in { font-size: 64px; line-height: 1.1; letter-spacing: -0.012em; color: var(--cream); text-wrap: balance; }
+.tip-head .big { font-size: 168px; line-height: .95; letter-spacing: -0.025em; }
+.tip-head .support { margin: 0; font: 500 44px/1.25 var(--font-body); color: var(--cream); }
+
+/* Spill the tea: Ginger and the robot */
+.tea-robot { position: absolute; left: 1610px; top: 610px; width: 262px; height: 358px; }
+.tea-ginger { position: absolute; left: 1250px; top: 420px; height: 560px; width: auto; margin: 0; max-width: none; max-height: none; }
+.talk { position: absolute; margin: 0; box-sizing: border-box; padding: 26px 32px; border-radius: 40px; background: var(--cream); color: var(--espresso); font: 600 38px/1.2 var(--font-display); letter-spacing: -0.01em; text-wrap: balance; }
+.talk::after { content: ""; position: absolute; bottom: -28px; border-style: solid; }
+.talk-you { left: 1170px; top: 214px; width: 380px; }
+.talk-you::after { left: 214px; border-width: 30px 0 0 34px; border-color: var(--cream) transparent transparent transparent; }
+.talk-ai { left: 1560px; top: 404px; width: 330px; background: var(--mustard); }
+.talk-ai::after { left: 150px; border-width: 30px 34px 0 0; border-color: var(--mustard) transparent transparent transparent; }
+
+/* ============================================================
+   7. Tip 1 example: the chat is the visual
+   ============================================================ */
+.example .left { position: absolute; left: 128px; top: 112px; bottom: 112px; width: 480px; display: flex; flex-direction: column; gap: 28px; }
+.example .l { font-size: 76px; line-height: 1.02; letter-spacing: -0.02em; }
+.ex-steps { list-style: none; margin: auto 0 0; padding: 0; display: flex; flex-direction: column; gap: 36px; }
+.ex-steps li { display: grid; grid-template-columns: 64px 1fr; gap: 20px; align-items: start; }
+.ex-steps .n { width: 64px; height: 64px; border-radius: 50%; background: var(--tomato); color: var(--cream); display: grid; place-items: center; font: 700 34px/1 var(--font-display); }
+.ex-steps h3 { margin: 6px 0 8px; font: 700 40px/1.05 var(--font-display); letter-spacing: -0.02em; color: var(--espresso); }
+.ex-steps p { margin: 0; font: 400 28px/1.35 var(--font-body); color: var(--muted); }
+/* Steps sit dimmed, then light up on their click */
+.reveal .slides section .fragment.lit { opacity: .3; visibility: inherit; transition: opacity var(--dur) var(--ease); }
+.reveal .slides section .fragment.lit.visible { opacity: 1; }
+
+.chat-window { position: absolute; left: 650px; right: 80px; top: 52px; bottom: 52px; background: #FFFDF8; border: 3px solid var(--line); border-radius: 36px; box-shadow: 0 18px 0 rgba(43,36,32,.06); display: flex; flex-direction: column; overflow: hidden; }
+.chat-bar { display: flex; align-items: center; gap: 10px; padding: 18px 30px; border-bottom: 3px solid var(--sand); }
+.chat-bar span { width: 16px; height: 16px; border-radius: 50%; background: var(--line); }
+.chat-bar b { margin-left: 16px; font: 600 24px var(--font-body); color: var(--muted); }
+.chat { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: flex-start; gap: 20px; padding: 26px 34px; }
+.msg { margin: 0; max-width: 1020px; padding: 22px 30px; border-radius: 30px; font: 400 31px/1.4 var(--font-body); box-sizing: border-box; }
+.msg .who { display: flex; align-items: center; gap: 8px; font: 700 22px/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; margin-bottom: 10px; }
+.msg .mic-tag { width: 22px; height: 22px; }
+.msg.you { align-self: flex-end; background: var(--teal); color: var(--cream); border-bottom-right-radius: 8px; }
+.msg.you .who { color: #FFE3A3; }
+.msg.ai { align-self: flex-start; background: var(--sand); color: var(--espresso); border-bottom-left-radius: 8px; max-width: 860px; }
+.msg.ai .who { color: var(--tomato); }
+.msg.voice .words span { opacity: 0; transition: opacity 180ms linear; }
+.msg.voice .words span.on { opacity: 1; }
+
+.chat-input { display: flex; align-items: center; gap: 18px; margin: 0 28px 24px; padding: 12px 12px 12px 30px; border: 3px solid var(--line); border-radius: 999px; background: var(--cream); }
+.chat-input .field { flex: 1; font: 400 28px var(--font-body); color: var(--muted); }
+.chat-input .mic-btn { position: relative; width: 76px; height: 76px; border-radius: 50%; background: var(--mustard); border: 3px solid var(--espresso); display: grid; place-items: center; flex: none; }
+.chat-input .mic-btn svg { width: 44px; height: 44px; }
+.chat-input.listening .field { color: var(--tomato); }
+.chat-input .live { display: none; }
+.chat-input.listening .idle { display: none; }
+.chat-input.listening .live { display: inline; font-weight: 600; }
+.chat-input.listening .mic-btn { background: var(--tomato); }
+.chat-input.listening .mic-btn svg rect { fill: var(--cream); }
+.chat-input.listening .mic-btn svg path { stroke: var(--cream); }
+.chat-input.listening .mic-btn::after { content: ""; position: absolute; inset: -12px; border-radius: 50%; border: 4px solid var(--tomato); animation: mic-pulse 1.1s ease-out infinite; }
+@keyframes mic-pulse { from { transform: scale(.85); opacity: .9; } to { transform: scale(1.25); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .chat-input.listening .mic-btn::after { animation: none; } .msg.voice .words span { transition: none; } }
+
+/* ============================================================
+   8. Tip 1 try: steal this prompt
+   ============================================================ */
+.steal .pad { gap: 44px; justify-content: center; }
+.prompt-box { position: relative; background: var(--espresso); color: var(--cream); border-radius: 36px; padding: 56px 64px 60px; }
+.prompt-box p { margin: 0; font: 500 50px/1.35 var(--font-display); letter-spacing: -0.01em; max-width: 1480px; text-wrap: pretty; }
+.prompt-box mark { background: none; color: var(--mustard); }
+.copy { position: absolute; right: 28px; top: 24px; font: 700 22px/1 var(--font-body); letter-spacing: .12em; text-transform: uppercase; color: var(--muted-dark); background: transparent; border: 2px solid #6B5E54; border-radius: 999px; padding: 12px 20px; cursor: pointer; }
+.copy:hover { color: var(--cream); border-color: var(--cream); }
+.copy:focus-visible { outline: 4px solid var(--mustard); outline-offset: 3px; }
+.tomorrow { margin: 0; font: 400 40px/1.3 var(--font-body); color: var(--muted); }
+.tomorrow b { color: var(--tomato); font-weight: 700; }
+
+.example .tip-badge.sm .tip-name { font-size: 32px; white-space: nowrap; }
+
+/* ============================================================
+   Your Turn slides (all tips)
+   ============================================================ */
+.yourturn .pad { gap: 56px; }
+.yourturn .xl { font-size: 150px; margin-top: 12px; }
+.turn-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 64px; }
+.turn-steps li { display: flex; flex-direction: column; gap: 18px; }
+.turn-steps .n { width: 80px; height: 80px; border-radius: 50%; background: var(--tomato); color: var(--cream); display: grid; place-items: center; font: 700 44px/1 var(--font-display); }
+.turn-steps h3 { margin: 6px 0 0; font: 700 54px/1.05 var(--font-display); letter-spacing: -0.025em; color: var(--espresso); text-wrap: balance; }
+.turn-steps p { margin: 0; font: 400 34px/1.4 var(--font-body); color: var(--muted); text-wrap: pretty; }
+
+/* ============================================================
+   Tip 2 example: confident answer, then blind spots
+   ============================================================ */
+.challenge-ex .pad { gap: 36px; padding-top: 96px; padding-bottom: 80px; }
+.challenge-ex .l { font-size: 84px; }
+.cx { display: grid; grid-template-columns: 1fr 760px; gap: 48px; flex: 1; min-height: 0; align-items: start; }
+.cx-left { display: flex; flex-direction: column; gap: 22px; }
+.cx .msg { max-width: none; font-size: 31px; line-height: 1.5; }
+.cx .msg.you { margin-left: 70px; }
+.cx .msg.ai { margin-right: 70px; max-width: none; }
+.flag { background: none; color: inherit; position: relative; }
+.flag::after { content: attr(data-n); display: inline-block; vertical-align: 2px; margin-left: 8px; width: 32px; height: 32px; border-radius: 50%; background: var(--tomato); color: var(--cream); font: 700 19px/32px var(--font-body); text-align: center; text-decoration: none; opacity: 0; transition: opacity 400ms var(--ease) 500ms; }
+.flag { text-decoration: underline 4px transparent; text-underline-offset: 7px; text-decoration-skip-ink: none; transition: text-decoration-color 400ms var(--ease) 500ms; }
+.challenge-ex:has(.cx-right.visible) .flag { text-decoration-color: var(--tomato); }
+.challenge-ex:has(.cx-right.visible) .flag::after { opacity: 1; }
+.cx-right { background: var(--espresso); color: var(--cream); border-radius: 32px; padding: 34px 40px 38px; display: flex; flex-direction: column; gap: 22px; }
+.cx-right .who { margin: 0; font: 700 22px/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--mustard); }
+.risks { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 18px; }
+.risks li { display: grid; grid-template-columns: 44px 1fr; gap: 16px; font: 400 30px/1.35 var(--font-body); }
+.risks span { width: 44px; height: 44px; border-radius: 50%; background: var(--tomato); color: var(--cream); display: grid; place-items: center; font: 700 22px/1 var(--font-body); margin-top: 2px; }
+.better { margin: 0; padding-top: 20px; border-top: 2px solid var(--espresso-2); font: 400 30px/1.35 var(--font-body); color: var(--muted-dark); }
+.better b { color: var(--mustard); }
+@media (prefers-reduced-motion: reduce) { .flag, .flag::after { transition: none; } }
+
+/* ============================================================
+   Reveal motion. Fragments start hidden; each click adds .visible.
+   ============================================================ */
+.reveal .slides section .fragment.pop { opacity: 0; visibility: hidden; transform: translateY(16px) scale(.97); transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease), visibility 0s linear var(--dur); }
+.reveal .slides section .fragment.pop.visible { opacity: 1; visibility: inherit; transform: none; transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease), visibility 0s; }
+
+/* SVG groups: fade in, and lines draw themselves */
+.reveal .slides section g.fragment.draw { opacity: 0; visibility: hidden; transition: opacity 450ms var(--ease), visibility 0s linear 450ms; }
+.reveal .slides section g.fragment.draw.visible { opacity: 1; visibility: inherit; transition: opacity 450ms var(--ease), visibility 0s; }
+g.draw .stroke { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 800ms var(--ease) 200ms; }
+g.draw.visible .stroke { stroke-dashoffset: 0; }
+g.draw .late { opacity: 0; transition: opacity 300ms var(--ease) 850ms; }
+g.draw.visible .late { opacity: 1; }
+g.draw .app { opacity: 0; transform: translateY(10px); transition: opacity 450ms var(--ease), transform 450ms var(--ease); transform-box: fill-box; }
+g.draw.visible .app { opacity: 1; transform: none; }
+g.draw.visible .app:nth-of-type(1) { transition-delay: 300ms; }
+g.draw.visible .app:nth-of-type(2) { transition-delay: 420ms; }
+g.draw.visible .app:nth-of-type(3) { transition-delay: 540ms; }
+g.draw.visible .app:nth-of-type(4) { transition-delay: 660ms; }
+
+/* Gentle idle blink for the robot */
+@keyframes blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(.15); } }
+.ai-eye { transform-box: fill-box; transform-origin: center; animation: blink 6s infinite; }
+
+/* Reduced motion: everything appears instantly, nothing moves */
+@media (prefers-reduced-motion: reduce) {
+  .reveal .slides section .fragment.pop,
+  .reveal .slides section .fragment.pop.visible,
+  .reveal .slides section g.fragment.draw,
+  .reveal .slides section g.fragment.draw.visible,
+  g.draw .stroke, g.draw .late, g.draw .app { transition: none !important; transform: none !important; }
+  g.draw .stroke { stroke-dashoffset: 0; }
+  g.draw .late, g.draw .app { opacity: 1; }
+  .ai-eye { animation: none; }
+  .comm .robot { transition: none; }
+  .reveal .slides section.present .toon-cameo { animation: none; }
+}
