@@ -947,3 +947,47 @@ div.oa-prompt p { margin: 0; }
 
 /* Tip 4: robot pops out of the box */
 .duo-intro svg.box-scene { position: absolute; left: 1490px; top: 420px; width: 380px; height: 475px; overflow: visible; }
+
+/* Batch 7 */
+.title-slide svg.peek { width: 414px; height: 414px; right: 100px; top: 390px; }
+.me .role { padding: 0; background: none; border-radius: 0; display: block; }
+.reveal .slide-number { right: 120px; bottom: 22px; left: auto; top: auto; background: none; padding: 0; font: 600 20px/1 var(--font-body); color: #9A8B7E; letter-spacing: .04em; }
+.shortcuts.solo .sc-solo .desc { font-size: 36px; line-height: 1.35; }
+.chef2-intro { top: 300px; }
+.chef2-text { margin-top: 84px; }
+.chef2-follow { position: absolute; left: 500px; top: 560px; width: 600px; }
+.chef2-follow p { margin: 0; font: 600 64px/1 "Caveat", cursive; color: var(--tomato); transform: rotate(-3deg); }
+.chef2-follow svg { position: absolute; left: 380px; top: -140px; width: 220px; height: 120px; }
+.chef2-follow { left: 480px; top: 535px; width: auto; display: flex; align-items: flex-end; gap: 6px; }
+.chef2-follow p { font-size: 58px; white-space: nowrap; }
+.chef2-follow svg { position: static; width: 110px; height: 74px; margin-bottom: 18px; }
+.reveal .slide-number { font-size: 24px; }
+.reveal .slide-number a { color: #9A8B7E; text-decoration: none; }
+
+/* Batch 8: five discovery stops, Tip 5 */
+.disc { width: 300px; }
+.disc h3 { font-size: 28px; }
+.disc .bring { font-size: 19px; }
+.disc-ic { width: 170px; height: 170px; } .disc-ic svg { width: 116px; height: 116px; }
+.disc.d1 { left: 110px; top: 300px; } .disc.d2 { left: 450px; top: 470px; }
+.disc.d3 { left: 790px; top: 300px; } .disc.d4 { left: 1130px; top: 470px; }
+.disc.d5 { left: 1470px; top: 300px; }
+
+.curious .cu-lines { margin-top: 70px; max-width: 1080px; display: flex; flex-direction: column; gap: 26px; }
+.cu-1 { margin: 0; font: 700 64px/1.1 var(--font-display); letter-spacing: -0.02em; color: var(--cream); }
+.cu-2 { margin: 0; font: 500 42px/1.25 var(--font-body); color: var(--muted-dark); }
+.cu-big { margin: 24px 0 0; font: 700 132px/.95 var(--font-display); letter-spacing: -0.04em; color: var(--mustard); }
+.cu-spark { position: absolute; left: 1420px; top: 330px; width: 300px; height: 200px; overflow: visible; }
+.cu-spark { left: 1600px; top: 420px; width: 260px; height: 173px; }
+
+/* Batch 9 */
+.disc.d1 { top: 320px; } .disc.d3 { top: 320px; } .disc.d5 { top: 320px; }
+.disc.d2 { top: 580px; } .disc.d4 { top: 580px; }
+.f3.f3-1, .f3.f3-2 { text-transform: none; }
+.connect-hand { margin: 0 0 -10px -4px; font: 600 84px/1 "Caveat", cursive; color: var(--tomato); transform: rotate(-3deg); transform-origin: left center; }
+.qr-row { display: flex; gap: 36px; margin-top: 10px; }
+.qr-card { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 18px 18px 16px; border-radius: 22px; background: #FFFDF8; box-shadow: 0 10px 0 rgba(43,36,32,.08); text-decoration: none; }
+.qr-card .qr { width: 200px; height: 200px; }
+.qr-card span { font: 700 26px/1 var(--font-display); color: var(--espresso); }
+.disc.d1, .disc.d3, .disc.d5 { top: 360px; }
+.disc.d2, .disc.d4 { top: 630px; }
