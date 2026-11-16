@@ -991,3 +991,33 @@ div.oa-prompt p { margin: 0; }
 .qr-card span { font: 700 26px/1 var(--font-display); color: var(--espresso); }
 .disc.d1, .disc.d3, .disc.d5 { top: 360px; }
 .disc.d2, .disc.d4 { top: 630px; }
+
+/* Tip 3: employee training recipe */
+.tr-card { position: absolute; left: 128px; top: 200px; width: 1380px; box-sizing: border-box; background: #FFFDF8; border-radius: 24px; border-top: 22px solid var(--tomato); box-shadow: 0 16px 0 rgba(43,36,32,.10); padding: 30px 52px 34px; }
+.tr-head { border-bottom: 3px dashed #E2CFB4; padding-bottom: 18px; margin-bottom: 22px; }
+.tr-title { margin: 0; font: 600 76px/1 "Caveat", cursive; color: var(--tomato); }
+.tr-title span { color: var(--espresso); }
+.tr-sub { margin: 10px 0 0; font: 600 36px/1.2 var(--font-display); letter-spacing: -0.015em; color: var(--espresso); }
+.tr-body { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 50px; }
+.tr-k { margin: 0 0 12px; font: 700 22px/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--tomato); }
+.tr-ing ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.tr-ing li { display: flex; gap: 16px; align-items: flex-start; font: 500 31px/1.25 var(--font-display); color: var(--espresso); }
+.tr-ing li::before { content: ""; width: 26px; height: 26px; flex: none; margin-top: 5px; border-radius: 5px; background: var(--mustard); border: 4px solid var(--espresso); }
+.tr-ins ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.tr-ins li { display: flex; gap: 16px; align-items: flex-start; font: 500 30px/1.25 var(--font-display); color: var(--espresso); }
+.tr-ins .rs-n { width: 44px; height: 44px; font-size: 24px; margin-top: -3px; }
+.tr-dish { margin-top: 24px; padding: 18px 26px; border-radius: 18px; background: var(--sand); display: flex; align-items: baseline; gap: 22px; }
+.tr-dish .tr-k { margin: 0; flex: none; }
+.tr-dish p:last-child { margin: 0; font: 600 32px/1.2 var(--font-display); color: var(--espresso); }
+.tr-dish b { color: var(--tomato); }
+.tr-note { position: absolute; left: 1430px; top: 250px; width: 420px; aspect-ratio: auto; display: block; text-align: left; padding: 30px 34px 36px; }
+.tr-note p { margin: 0; font: 600 38px/1.12 "Caveat", cursive; color: var(--espresso); }
+.tr-note .tn-k { margin-bottom: 10px; font-size: 64px; color: var(--tomato); }
+.reveal .slides section .tr-note.fragment.pop { transform: rotate(5deg) scale(.9); }
+.reveal .slides section .tr-note.fragment.pop.visible { transform: rotate(5deg); }
+.tr-card { top: 236px; }
+.tr-ing li { font-size: 33px; }
+.tr-ins li { font-size: 32px; }
+.tr-note { top: 280px; width: 440px; }
+.tr-note p { font-size: 42px; }
+.ai-offer { margin: 14px 0 0; padding: 14px 20px; border-radius: 18px 18px 18px 6px; background: var(--sand); font: 600 30px/1.25 var(--font-display); color: var(--espresso); }
