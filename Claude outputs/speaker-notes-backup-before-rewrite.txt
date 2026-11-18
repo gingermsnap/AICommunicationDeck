@@ -1,0 +1,453 @@
+===== Slide 1 (title) =====
+Welcome. Over the next 40 minutes, I'm going to share five practical tips to work smarter with AI. Whether you've barely opened ChatGPT or you use AI every day, you'll leave with at least one thing you can try tomorrow.
+
+And here's the big idea we'll keep coming back to: AI is the tool. You're still the expert. You bring the judgment, the creativity, the context, and the experience.
+
+===== Slide 2 (hello) =====
+Quick intro. Who I am, where I've worked, and why I'm standing up here talking about AI.
+
+I've spent more than 20 years translating complex, technical, and emotionally charged topics into clear, meaningful communication for audiences who ask tough questions, across local government, nonprofits, and the business world.
+
+[Add your personal story here: how you started using AI, and the moment it clicked for you.]
+
+===== Slide 3 (cool-stuff) =====
+Start with the headline on screen. Let it land.
+
+When people talk about AI, the conversation often turns to coding and technology. But I come at it from a different direction.
+
+I'm a communicator. AI is the tool. Communication is the skill. And most of you already have that skill. You just haven't used it on AI yet.
+
+BUT GINGER, WE WANT TO DO THE COOL STUFF! About 60 seconds. Have fun with it.
+
+Some of you might be thinking, "But Ginger, I want to do the cool stuff!
+
+[CLICK 1] (The ideas pop out on their own, fast. Let them play out for a couple of seconds.)
+
+I want to build agents, automate my business, have a personal assistant, make videos, and maybe even get a robot to fold my laundry."
+
+And I get it! That's the exciting stuff.
+
+[CLICK 2] But believe it or not, communication is one of the foundations of all of it.
+
+Before you can build something useful, you need to explain what you want, understand how you do things, and recognize when something isn't working.
+
+That's what we're going to work on today.
+
+And at the end, I'll show you how I used these same principles to build the presentation you're watching.
+
+[CLICK 3] (The robot slides over to make room. Then click to the next slide.)
+
+===== Slide 4 (foundation) =====
+THE CLEARER YOU COMMUNICATE, THE MORE USEFUL AI BECOMES.
+
+Communication isn't just telling AI what to do.
+
+[CLICK 1] It's a conversation. You start it.
+
+[CLICK 2] It's a back-and-forth. You exchange ideas and challenge each other.
+
+[CLICK 3] It's a way to solve problems together.
+
+[CLICK 4] It's how you give instructions.
+
+[CLICK 5] And it's how you explore new possibilities.
+
+And the clearer we communicate, the more useful AI becomes.
+
+===== Slide 5 (statement) =====
+Let this one breathe. Read the first line. Pause.
+
+[CLICK] Then the second.
+
+You don't need to understand how AI works behind the scenes to use it well. But the better you communicate, the more you can do with it.
+
+Think about driving. You don't need to rebuild an engine to be a great driver. But you do need to know how to steer, read the signs, and tell where you're going.
+
+That's what the next five tips are about: how to communicate with AI so it actually helps you.
+
+===== Slide 6 (tip-1) =====
+THE TIP. This is tip 1 of 5.
+
+Stop trying to write the perfect prompt. Spill the tea. Start talking and give AI the context and details it needs.
+
+[CLICK 1] Here's me, and here's my AI.
+
+[CLICK 2] "Okay, so here's the thing..." That's how I start. Not with a perfect prompt. Just the way I'd start telling a friend about a problem.
+
+[CLICK 3] "I'm listening. Tell me more." And that's the magic. AI doesn't need you to be organized. It needs context. The more you tell it, the better it can help.
+
+WHY IT WORKS (say it, don't show it)
+No guesswork: you don't need the perfect prompt, you just need to know your business.
+Better context: AI asks questions to fill the gaps.
+Less rework: get clear before AI generates an answer.
+
+Transition: Let me show you what that actually sounds like.
+
+===== Slide 7 (tip-1-example) =====
+SEE IT: A REAL EXAMPLE.
+
+[CLICK 1] Talk it out. This is what a real voice note sounds like. "Okay, so, um…" It's messy, and that's fine. I didn't organize my thoughts first. I just explained my situation and what I want. (The words appear as if spoken. Let them finish before clicking.)
+
+[CLICK 2] Let AI ask questions. Before it writes anything, I ask it to interview me, one question at a time. And it starts with the question that matters most: what do I want readers to do?
+
+Key takeaway: Talk it out. Let AI ask questions. You can start with a messy thought and let AI help you develop it.
+
+Note: The yoga studio is a sample business. Swap in an example from your audience's world if you know who's in the room.
+
+===== Slide 8 (tip-1-try) =====
+TRY THIS TOMORROW. About five minutes. An invitation, not homework.
+
+You bring the knowledge and the context. AI helps you shape it.
+
+Open your favorite AI tool, whether that's ChatGPT, Claude, Gemini, or Copilot. Find the voice button. It's usually a microphone or sound-wave icon. Then talk through something you're working on.
+
+Remember the three steps: talk it out, be clear about your goal, and let AI interview you, one question at a time.
+
+If you want words to start with: "Ask me questions one at a time until you understand what I'm trying to do. Then sum up what you heard and suggest a next step."
+
+For experienced users: ask it to turn the conversation into a prompt you can reuse, then save it in a project or your custom instructions.
+
+===== Slide 9 (tip-2) =====
+THE TIP. This is tip 2 of 5.
+
+Tip 1 was about how you talk to AI. Tip 2 is about how you question what AI tells you.
+
+AUDIENCE MOMENT (20 seconds)
+Question: "Raise your hand if AI has ever agreed with you a little too fast."
+Takeaway: AI is built to be helpful, so it tends to agree with you. Agreeing isn't the same as being right.
+
+Don't just take its word for it. Push back. And let AI push back, too.
+
+Good AI conversations involve questioning, feedback, and iteration. The first answer isn't always the best answer. AI can sound confident and still be wrong.
+
+One of my favorite ways to use AI is to red-team my own thinking. I don't just want AI to agree with me. I want it to tell me what I'm missing.
+
+[CLICK 1] "I don't think you understood what I am saying."
+
+[CLICK 2] "Let's take another look." It doesn't get offended. It's happy to look again. You just have to ask.
+
+Transition: First, why this matters. There's research on this.
+
+===== Slide 10 (tip-2-agree) =====
+THE RESEARCH. This is why pushing back matters. (The number counts up on its own when the slide opens. No click needed.)
+
+A Stanford team led by Myra Cheng tested 11 leading AI models. AI affirmed users' actions 49% more often than humans did. Even when the person was describing something deceptive or harmful.
+
+They also found people liked the agreeable AI more and trusted it more. That's the trap. It feels good to be agreed with.
+
+So the agreement isn't proof you're right. Let me show you what that looks like with a real business question.
+
+Source: Myra Cheng, Cinoo Lee, Pranav Khadpe, Sunny Yu, Dyllan Han, and Dan Jurafsky, "Sycophantic AI decreases prosocial intentions and promotes dependence," Science 391, no. 6792 (March 26, 2026). DOI: 10.1126/science.aec8352
+
+===== Slide 11 (tip-2-shortcuts) =====
+MY FAVORITE SHORTCUT. Before I show you a conversation, meet /redteam.
+
+This is my favorite shortcut. /redteam asks AI to challenge my assumptions and check for bias. When I type it, AI knows to: "Challenge my thinking. Identify three blind spots and question my assumptions."
+
+It's a custom instruction I set up once in my AI tool's settings. It's not a built-in command. You can also just type the request in plain words: "Challenge my thinking. Identify three blind spots and question my assumptions."
+
+Transition: Here's what it looks like in action.
+
+===== Slide 12 (tip-2-example) =====
+THE CONVERSATION. This is an illustrative scenario, not a real analysis.
+
+Here I am, talking with AI about my business.
+
+[CLICK 1] AI recommends: "Raise your prices by 10%. You'll increase revenue without needing more customers." Sounds confident. Sounds reasonable.
+
+[CLICK 2] I don't argue. I just type one word: /redteam.
+
+[CLICK 3] Watch what happens. AI takes another look. It says my prices are already competitive in this example. And the biggest thing it missed: it never asked why I wanted more revenue. Am I trying to attract more customers, improve profit margins, or increase repeat business? That changes the recommendation.
+
+One shortcut changed the direction of the whole conversation. It went from an answer to a better question.
+
+Important: asking AI to check itself doesn't guarantee it's right. It exposes assumptions so you can think better. You still check the facts, and you still make the call.
+
+===== Slide 13 (tip-2-try) =====
+TRY THIS TOMORROW. About five minutes.
+
+/redteam your AI. Next time AI gives you an answer you're about to use, ask it to challenge your thinking, identify blind spots, and question your assumptions.
+
+No shortcut set up yet? Just type it in plain words: "Challenge my thinking. Identify three blind spots and question my assumptions."
+
+Then decide what to keep, question, verify, or change. You bring the judgment. AI doesn't get the final say.
+
+The first answer isn't always the best answer.
+
+===== Slide 14 (tip-3) =====
+THE TIP. This is tip 3 of 5. Map your workflow.
+
+Before you can teach AI to help with a process, you need to understand it well enough to explain it. AI can't follow steps you haven't explained.
+
+[CLICK 1] The tangle becomes a clear path.
+
+Transition: But here's the catch.
+
+===== Slide 15 (tip-3-map) =====
+HOW TO MAP IT. Knowing how to do something isn't the same as knowing how to explain it.
+
+[CLICK 1] Remember making a PB&J? You know how to do it. But can you explain it? Watch what happens when a dad follows his kids' instructions word for word.
+
+VIDEO: "Exact Instructions Challenge" by Josh Darnit. Click the video card to play. It plays from 0:43 and stops on its own at 1:08. Needs internet.
+Link: https://youtu.be/cDA3_5982h8?t=43 (stop at 1:08)
+Tip: after the video, click once on the slide background before using the arrow keys again.
+Backup if the video won't load: "Put peanut butter on the bread," and he sets the whole jar on top of the loaf.
+
+[CLICK 2] We skip explaining steps because they are obvious to us. They skipped opening the jar, picking up the knife, using a plate. Not because they don't know how. Because it's automatic for them. Same thing happens when you explain your work to AI.
+
+Transition: So here's how to avoid being those kids.
+
+===== Slide 16 (tip-3-maptry) =====
+TRY THIS TOMORROW. Map one process from start to finish.
+
+[CLICK 1] Here's how. Pick a problem. Choose a real task you repeat. Start with a real problem, not a tool or a skill.
+
+Walk through it. Actually do the task, slowly, and notice every step and every decision you make. Imagine explaining it to someone who's never done it before.
+
+Map it out. Write down the steps, the decisions, and the exceptions. What happens when something goes wrong?
+
+[CLICK 2] Then ask AI: "Interview me, one question at a time, to help me map this process. Identify missing steps, decisions, and exceptions." That's Tip 1, a conversation.
+
+Then review the map together and test it against how you actually work. Challenge what AI gives you. That's Tip 2.
+
+Once you can clearly explain your process, you're ready for Tip 4.
+
+===== Slide 17 (tip-4-recipe) =====
+THE TIP. This is tip 4 of 5. Create your recipe.
+
+You've mapped your workflow. Now teach AI how to follow your process.
+
+Turn your workflow into instructions AI can follow again and again.
+
+Transition: Let me explain with a chef.
+
+===== Slide 18 (tip-3-chef) =====
+THE CHEF ANALOGY. Start with "Imagine AI is a chef." on screen.
+
+[CLICK 1] Here's our chef.
+
+[CLICK 2] The chef knows how to cook. But it doesn't know what you are making or how you like it made.
+
+[CLICK 3] So it needs a recipe to follow. A recipe gives the chef clear instructions to follow. It helps produce more consistent results, saves time, and makes the process easier to repeat. Here's mine: spaghetti and meatballs. A recipe has ingredients, step-by-step instructions, your preferences, and what the finished dish should look like.
+
+[CLICK 4] "Extra garlic!" That's your preference. The chef would never guess it. You have to say it. And now the chef can serve it up exactly how you like it.
+
+===== Slide 19 (tip-3-training) =====
+EMPLOYEE TRAINING. Here's a recipe almost every small business can use.
+
+A lot of us have years of experience training employees. But very little of it is written down. It lives in your head.
+
+The recipe: Employee Training. A repeatable process for creating training guides.
+
+[CLICK 1] The ingredients. Your existing procedures and notes, your business knowledge and experience, who you're training, and what they need to learn or do.
+
+[CLICK 2] The instructions. Organize the information into a step-by-step training guide. Explain each step in plain language. Include practical examples. Create a checklist and a short quiz. And flag anything that's missing, then give me a draft to review.
+
+[CLICK 3] And my way: "Keep it friendly. Assume they're brand new. Use our business's tone and examples. Don't invent company policies!" That last one matters. If AI doesn't know your policy, you want it to ask, not make one up.
+
+[CLICK 4] The finished dish: a training guide, a checklist, and a quiz, ready for your review.
+
+You review it for accuracy before any employee sees it. You're still the expert.
+
+Transition: Here's how I use the same recipe approach in my own work.
+
+===== Slide 20 (tip-4-govstory) =====
+MY EXAMPLE. Here's how I turned a recurring problem in my own work into a reusable AI recipe, using everything we've talked about today.
+
+[CLICK 1] The problem. I regularly need to turn complicated government information into clear, accessible communications for the public.
+
+[CLICK 2] The conversation. That's Tip 1. I explained what I do, and I had AI help me figure out what information it needed: the audience, the communication goal, the format, and the required facts.
+
+[CLICK 3] The workflow. That's Tip 3. I identified the steps I actually follow when I write: review the source material, identify the key information, write for the audience, check accessibility, and review for accuracy.
+
+Transition: Then I turned all of that into a recipe.
+
+===== Slide 21 (tip-4-gov2) =====
+THE RECIPE AND THE RESULT.
+
+[CLICK 1] The recipe. My requirements, turned into reusable instructions. That's Tip 4.
+
+[CLICK 2] The ingredients. The source information and who it's for. The goal and the format. And the facts, dates, links, and official wording that have to be there.
+
+[CLICK 3] The instructions. Identify the most important information. Write at a sixth- to eighth-grade reading level. AP style, with the Oxford comma. Accessible formatting and descriptive links. Flag anything that's missing.
+
+[CLICK 4] My way: "Warm, direct, and public-facing. No unnecessary jargon or emojis. Never invent facts or change official policy language."
+
+[CLICK 5] The result. A repeatable process that produces a clear draft for my review, without starting from scratch every time. I'm still the expert. I still check every word.
+
+Transition: And once a recipe is tested and refined, there's one more step you can take.
+
+===== Slide 22 (tip-4-skill) =====
+ADVANCED TIP. Turn your recipe into a skill.
+
+Quick recap of where we've been. Your workflow is how you do the work. Your recipe is the instructions AI can follow. A skill is those instructions saved so you can use them again.
+
+Once you've tested and refined your recipe, you can save it to use again. Some AI tools let you package these instructions as a reusable skill.
+
+[CLICK 1] Here's the prompt: "Help me turn this tested recipe into a reusable AI skill. Interview me one question at a time to understand my instructions, preferences, and what must never change." (Give people a second to take a photo.)
+
+You don't need to know how to build one yourself. AI can walk you through it.
+
+[CLICK 2] Your recipe becomes a skill.
+
+[CLICK 3] To be clear: a skill is a saved set of instructions. It's not an AI that goes off and works on its own. And not every AI tool supports skills, so you may need to save the instructions somewhere and paste them in. That still works.
+
+Test it. Refine it. Reuse it.
+
+Transition: So try this tomorrow.
+
+===== Slide 23 (tip-3-try) =====
+TRY THIS TOMORROW. Teach AI something you already know.
+
+Turn something you do regularly into a reusable prompt or skill.
+
+Use this prompt with the workflow you mapped in Tip 3: "Using the workflow we mapped, help me create reusable instructions. Include what information you need, each step to follow, my preferences, and the result I want. Ask questions if anything is unclear."
+
+That's your recipe: the ingredients, the steps, your way, and the finished dish.
+
+It's the same conversation skill from Tip 1, with more structure. In Tip 1 you start talking. Here, AI asks the questions until it understands your process, and you end up with instructions you can reuse.
+
+Then test the recipe, refine it, and save it so you can reuse it.
+
+The Copy button copies the prompt if you share the deck link.
+
+OPTIONAL HOMEWORK. Want to go deeper? Jake Van Clief's free course on YouTube, "How I'd Learn AI From Zero in 2026 (the full free course)," explores workflows and reusable AI skills. Scan the QR code or click the link.
+
+Privacy reminder: leave out customer names, account numbers, and anything private.
+
+Transition: And that brings us to our last tip. Because once you start experimenting like this, you'll discover things you never thought to ask.
+
+===== Slide 24 (tip-4) =====
+THE TIP. This is tip 5 of 5. Think outside the box. This is how you think with AI.
+
+AI can help you discover opportunities and ideas you hadn't considered.
+
+This isn't another lesson on prompting. Tip 1 got you talking. This is where those conversations can take you. Think of AI as a thinking partner.
+
+[CLICK 1] "What am I missing?"
+
+[CLICK 2] AI pops out of the box with a question of its own. "Have you looked at your reviews?"
+
+[CLICK 3] "Ooh. Tell me more." That's the back and forth. You bring the business knowledge. AI brings a fresh angle.
+
+Transition: Let's look at where that can go.
+
+===== Slide 25 (tip-4-ideas) =====
+AUDIENCE MOMENT (30 seconds). Before the first click, ask: "What's one question about your business you wish you had time to think through?" Take two or three answers.
+
+Then reveal one at a time. Each one starts with something you bring to the conversation.
+
+[CLICK 1] Customer reviews. Paste in your reviews and ask what customers love that you're not promoting. (We'll see this on the next slide.)
+
+[CLICK 2] "Where is my bottleneck?" Walk AI through how your work actually gets done, from first contact to finished job. Ask where things slow down or pile up.
+
+[CLICK 3] Competitors. Share their website links and ask AI to analyze their messaging and identify weaknesses where they leave an opening for you. AI only knows what you give it or what it can look up, so check anything current.
+
+[CLICK 4] Sales data. Share your sales numbers and ask what patterns or trends you might have missed. Double-check any numbers before you act on them.
+
+[CLICK 5] Your website. Ask AI to audit your site and suggest ways to improve your SEO. That's search engine optimization: how easily people find your business when they search online.
+
+Privacy reminder: remove customer names, emails, and private data before you upload anything.
+
+===== Slide 26 (tip-4-example) =====
+REAL EXAMPLE. This is the "I didn't know AI could do that" moment. These are sample reviews for a made-up salon.
+
+Most salons advertise their services and prices. But read what customers actually say.
+
+[CLICK 1] Paste your reviews into AI and ask: "What do customers love that I never mention in my marketing?"
+
+[CLICK 2] Notice the highlights. AI found three selling points hiding in plain sight: the personal touch, family friendly, and fast enough for a lunch break. None of those are on most salon websites.
+
+[CLICK 3] And it can turn them into marketing. Next step: create a social media ad with the headline "The Salon That Remembers You." That's a brand.
+
+[CLICK 4] And then AI offers: "Would you like me to draft that for you?" The conversation keeps going. You decide where it goes next.
+
+Push back on it (Tip 2): Ask, "What patterns might you be overstating? How many reviews mention each one?" Then check a few reviews yourself.
+
+Use public reviews only, and don't paste in private customer information.
+
+===== Slide 27 (tip-4-try) =====
+TRY THIS TOMORROW. About five minutes.
+
+Give AI a little context about your business first (Tip 1), or use a chat that already knows you. Then ask: "Based on what you know about my business, ask me questions to help uncover opportunities I haven't considered."
+
+Tip 1 taught you how to start talking to AI. This is where those conversations can take you.
+
+Push back on what it suggests (Tip 2). Then pick the one idea that excites you most and try it.
+
+You decide what's worth trying. AI just widens the menu.
+
+===== Slide 28 (tip-5) =====
+EXPLORE AND EXPERIMENT. The last part of Tip 5. A short one, about a minute.
+
+There's not one right way to use AI.
+
+[CLICK 1] You don't need to have everything figured out before you start.
+
+[CLICK 2] Experimenting helps you discover what works for your business. Try a new tool. Try a new kind of question. Notice what helps and what doesn't.
+
+[CLICK 3] Stay curious. Stay in charge. Curious enough to keep trying new things. In charge enough to decide what's worth keeping.
+
+Transition: "And speaking of staying curious, this is how I built this presentation."
+
+===== Slide 29 (how-i-built) =====
+BEHIND THE SCENES. Before we wrap up, I want to show you how I actually built this presentation. Because yes, I used AI. A lot of it.
+
+[CLICK 1] ChatGPT, about $20 a month. This was my thought partner. I used it for brainstorming, long conversations, organizing my ideas, challenging my thinking, and writing prompts for the other tools.
+
+[CLICK 2] Claude Code Desktop, about $20 a month. This did the coding. It built the slides you're looking at right now.
+
+[CLICK 3] Perplexity, free. Research, fact-checking, and finding sources. Every stat I showed you, I checked.
+
+[CLICK 4] My Apple MacBook. Everything ran right here on my laptop.
+
+[CLICK 5] Pen, paper, and Post-it notes. Free, and still my favorite. Brainstorming, sketching, and working through ideas away from the screen.
+
+[CLICK 6] GitHub, free. It stores the presentation's code and keeps track of every version, so nothing gets lost.
+
+[CLICK 7] And tea. Lots of tea. And my cat, who supervised the whole thing.
+
+Notice who's in the middle. Me. I decided what each tool did and when.
+
+[CLICK 8] This was not one magic prompt. It was conversations, research, experiments, revisions, critical thinking, and creativity. Lots of back and forth. Lots of "no, not like that."
+
+[CLICK 9] AI helped me build this presentation. But it didn't decide what I wanted to say. I did.
+
+[Pause. Let that land.]
+
+===== Slide 30 (closing) =====
+CLOSING. Slow down here.
+
+AI is the tool.
+
+[CLICK] Communication is the skill.
+
+[CLICK] And you're still the expert.
+
+Five tips. Talk to AI. Challenge it. Map your workflow. Create your recipe. Explore. Every one of them builds on a communication skill you already have.
+
+[CLICK] So start a conversation. See where it takes you.
+
+Thank you!
+
+===== Slide 31 (resources) =====
+RESOURCES. These are the places I keep learning.
+
+The AI Daily Brief: daily AI news and analysis from Nathaniel Whittemore. Great for staying current in about 20 minutes.
+
+AI SIX Podcast: [add one line about why you like it].
+
+RMAIIG, the Rocky Mountain Artificial Intelligence Interest Group: meetups for non-technical people who are curious about AI. rmaiig.org
+
+Every card is a live link. Click one to open it in a new tab.
+
+Closing: Don't try to do all five tips. Pick one. Try it tomorrow. AI is the tool. You're still the expert.
+
+Then open it up for questions.
+
+===== Slide 32 (connect) =====
+CONNECT WITH ME. Thank you!
+
+Scan the first code to get this slide deck, including the prompts and the /redteam shortcut. Scan the second to connect with me on LinkedIn.
+
+Then open it up for questions.
