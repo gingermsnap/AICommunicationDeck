@@ -1283,3 +1283,6 @@ div.oa-prompt p { margin: 0; }
 .map-try .oa-head { font-size: 80px; max-width: none; white-space: nowrap; }
 .map-try .oa { gap: 12px; }
 .map-try .pad { gap: 8px; }
+#statement .setup { color: var(--cream); }
+.bt-mug { left: 982px; top: 424px; width: 92px; height: 83px; }
+#tip-2 .talk-you.long { top: 250px; left: 1150px; }
