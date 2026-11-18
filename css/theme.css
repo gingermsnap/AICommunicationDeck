@@ -1356,3 +1356,19 @@ img.qr { display: block; image-rendering: pixelated; image-rendering: crisp-edge
 .reveal .go-deeper .gd-qr { position: absolute; right: 128px; top: 50%; transform: translateY(-46%); display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 18px 18px 24px; border-radius: 32px; background: #FFFDF8; box-shadow: 0 12px 0 rgba(43,36,32,.08); text-decoration: none; }
 .gd-qr img { width: 440px; height: 440px; }
 .gd-qr span { font: 700 34px/1 var(--font-display); color: var(--espresso); }
+
+/* ---------- Tip 4 · Employee Training recipe: callouts on the left ---------- */
+/* Card shifts right to make room; the My Way! note moves into the left column and appears last, after the callouts. */
+#tip-3-training .tr-card { left: 556px; width: 1336px; }
+#tip-3-training .tr-note { left: 112px; top: 330px; width: 430px; }
+.tr-call { position: absolute; left: 128px; width: 384px; box-sizing: border-box; margin: 0; padding: 24px 28px 26px; border-radius: 26px; background: var(--espresso); color: var(--cream); box-shadow: 0 10px 0 rgba(43,36,32,.12); }
+.tr-call p { margin: 0; }
+.tr-call .tc-k { font: 700 24px/1 var(--font-body); letter-spacing: .12em; text-transform: uppercase; color: var(--mustard); }
+.tr-call .tc-v { margin-top: 8px; font: 800 38px/1.05 var(--font-display); letter-spacing: -0.01em; text-transform: uppercase; color: var(--cream); }
+.tr-call .tc-s { margin-top: 12px; font: 500 28px/1.25 var(--font-display); color: var(--muted-dark); }
+.tr-arrow { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: visible; pointer-events: none; }
+.tr-arrow path { fill: none; stroke: var(--tomato); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+.tr-call.c1 { top: 520px; }
+.tr-call.c2 { top: 700px; }
+.tr-call.c3 { top: 784px; }
+.tr-plate { position: absolute; left: 150px; top: 560px; width: 330px; height: 220px; overflow: visible; }
